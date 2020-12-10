@@ -1,25 +1,7 @@
 #! /usr/bin/python3
-
-import json
 import random
-from datetime import date, timedelta, datetime
-
-
-def load_json(path):
-    with open(path) as json_file:
-        data = json.load(json_file)
-
-        for book in data:
-            for card in book['cards']:
-                card['date'] = datetime.strptime(card['date'], '%Y-%m-%d').date()
-
-        return data
-
-
-def save_json(data, path):
-    with open(path, 'w') as json_file:
-        json.dump(data, json_file, indent=4, default=str)
-
+from datetime import date, timedelta
+from utils import load_json, save_json, json_path
 
 def generate_front(quote):
     quote = quote.split()
@@ -73,7 +55,6 @@ def practice(data):
 
 
 if __name__ == '__main__':
-    json_path = './data/gskaggs.json'
     data = load_json(json_path)
     practice(data)
     save_json(data, json_path)
