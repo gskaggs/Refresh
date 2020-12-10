@@ -1,4 +1,5 @@
 #! /usr/bin/python3
+
 import random
 from datetime import date, timedelta
 from utils import load_json, save_json, json_path
