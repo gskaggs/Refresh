@@ -1,6 +1,7 @@
 #! /usr/bin/python3
 
 import json
+import random
 from datetime import date, timedelta, datetime
 
 
@@ -21,8 +22,14 @@ def save_json(data, path):
 
 
 def generate_front(quote):
-    n = len(quote)
-    return '...' + quote[n//2:]
+    quote = quote.split()
+    N = len(quote)
+    K = N//4
+
+    for i in random.choices(range(N), k=K):
+        quote[i] = ''.join(['_'] * len(quote[i]))
+
+    return ' '.join(quote)
 
 
 def get_front_back(card):
@@ -30,7 +37,7 @@ def get_front_back(card):
         return (card['front'], card['back'])
     
     quote = card['quote']
-    return (generate_front(quote), quote)
+    return ('Quote: ' + generate_front(quote), quote)
 
 
 def present_card(card):
