@@ -29,8 +29,6 @@ def get_book_data():
     title  = input('Title:\n')
     thesis = input('Thesis:\n')
     
-    quotes = multiline_input('Quotes:')
-    notes  = multiline_input('Takeaways:')
     defns  = []
 
     print('Abstractions')
@@ -39,6 +37,9 @@ def get_book_data():
         if len(name) == 0:
             break
         defns.append((name, multiline_input('Definition:')))
+
+    notes  = multiline_input('Takeaways:')
+    quotes = multiline_input('Quotes:')
 
     cards = []
     cards.append(flash_card('Thesis', thesis))
