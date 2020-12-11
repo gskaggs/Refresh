@@ -1,28 +1,7 @@
 #! /usr/bin/python3
 
-from utils import load_json, save_json, json_path, multiline_input
-from datetime import date
-
-def vanilla_card():
-    card = {}
-    card['level'] = 1
-    card['date']  = date.today()
-    return card
-
-
-def quote_card(quote):
-    card = vanilla_card()
-    card['quote'] = quote
-    card['type']  = 'quote'
-    return card
-
-
-def flash_card(front, back):
-    card = vanilla_card()
-    card['front'] = front
-    card['back']  = back
-    card['type']  = 'flash'
-    return card
+from io_utils import load_json, save_json, json_path, multiline_input
+from card_utils import note_card, quote_card, flash_card
     
 
 def get_book_data():
@@ -43,10 +22,14 @@ def get_book_data():
 
     cards = []
     cards.append(flash_card('Thesis', thesis))
-    cards.append(flash_card('Takeaways', notes))
+
+    for note in notes.split('\n'):
+        if len(note) > 0:
+            cards.append(note_card(note))
 
     for quote in quotes.split('\n'):
-        cards.append(quote_card(quote))
+        if len(quote) > 0:
+            cards.append(quote_card(quote))
     
     for defn in defns:
         cards.append(flash_card(*defn))

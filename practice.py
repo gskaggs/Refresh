@@ -16,11 +16,17 @@ def generate_front(quote):
 
 
 def get_front_back(card):
-    if card['type'] == 'flash':
+    card_type = card['type']
+    if card_type == 'flash':
         return (card['front'], card['back'])
-    
-    quote = card['quote']
-    return ('Quote: ' + generate_front(quote), quote)
+
+    if card_type == 'quote':
+        quote = card['quote']
+        return ('Quote: ' + generate_front(quote), quote)
+
+    if card_type == 'note':
+        note = card['note']
+        return ('Note: ' + generate_front(note), note)
 
 
 def present_card(card):
@@ -46,14 +52,21 @@ def practice(data):
     for book in data:
         cards = book['cards']
         random.shuffle(cards)
+        rounds = 0
         while any([card['date'] <= date.today() for card in cards]):
-            print(book['title'])
+            if rounds == 0:
+                print('----------------------------------------------------------------------')
+                print(book['title'])
 
             for card in cards:
                 if card['date'] <= date.today():
                     successful = present_card(card)
                     update_card(card, successful)
                     print('')
+
+            rounds += 1
+            
+
 
 
 if __name__ == '__main__':
