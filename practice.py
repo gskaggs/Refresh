@@ -33,11 +33,11 @@ def present_card(card):
 
 
 def update_card(card, successful):
-    level_to_days = {1: 1, 2: 3, 3: 7, 4: 14}
+    level_to_days = {1: 1, 2: 3, 3: 7, 4: 14, 5: 21}
     level = card['level']
     if successful:
         card['date'] = date.today() + timedelta(days=level_to_days[level])
-        card['level'] = min(card['level'] + 1, 4)
+        card['level'] = min(card['level'] + 1, 5)
     else:
         card['level'] = 1
 
