@@ -45,6 +45,7 @@ def update_card(card, successful):
 def practice(data):
     for book in data:
         cards = book['cards']
+        random.shuffle(cards)
         while any([card['date'] <= date.today() for card in cards]):
             print(book['title'])
 
