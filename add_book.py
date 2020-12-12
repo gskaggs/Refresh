@@ -1,6 +1,6 @@
 #! /usr/bin/python3
 
-from io_utils import load_json, save_json, json_path, multiline_input
+from io_utils import load_data, save_data, json_path, multiline_input
 from card_utils import note_card, quote_card, flash_card
     
 
@@ -47,8 +47,8 @@ def add_book(data):
 
 
 if __name__ == '__main__':
-    data = load_json(json_path)
-    add_book(data)
-    save_json(data, json_path)
+    user_data, book_data = load_data(json_path)
+    add_book(book_data)
+    save_data(user_data, book_data, json_path)
 
 

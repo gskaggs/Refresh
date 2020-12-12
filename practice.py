@@ -2,7 +2,8 @@
 
 import random
 from datetime import date, timedelta
-from utils import load_json, save_json, json_path
+from io_utils import load_data, save_data, json_path
+from card_utils import total_cards_due, book_cards_due, get_cards_due
 
 def generate_front(quote):
     quote = quote.split()
@@ -22,20 +23,22 @@ def get_front_back(card):
 
     if card_type == 'quote':
         quote = card['quote']
-        return ('Quote: ' + generate_front(quote), quote)
+        return ('"' + generate_front(quote) + '"', '"' + quote + '"')
 
     if card_type == 'note':
         note = card['note']
-        return ('Note: ' + generate_front(note), note)
+        return (generate_front(note), note)
 
 
 def present_card(card):
     front, back = get_front_back(card)
     
-    input(front)
-    response = input(back + '\n')
-
-    return response.lower().strip() != 'f'
+    responses = []
+    responses.append(input(front + '\n'))
+    responses.append(input(back +  '\n'))
+    successful = all([response.lower().strip() != 'f' for response in responses])
+    update_card(card, successful)
+    return successful
 
 
 def update_card(card, successful):
@@ -48,28 +51,43 @@ def update_card(card, successful):
         card['level'] = 1
 
 
-def practice(data):
-    for book in data:
-        cards = book['cards']
+def practice(user_data, book_data):
+    session_length = user_data.get('session_length', 10)
+    card_count = 0
+
+    random.shuffle(book_data)
+
+    for book in book_data:
+        if card_count >= session_length:
+            break
+        
+        if book_cards_due(book) == 0:
+            continue
+        
+        print('----------------------------------------------------------------------')
+        print(book['title'], '\n')
+        
+        cards = get_cards_due(book['cards'], session_length - card_count)
+        card_count += len(cards)
         random.shuffle(cards)
-        rounds = 0
-        while any([card['date'] <= date.today() for card in cards]):
-            if rounds == 0:
-                print('----------------------------------------------------------------------')
-                print(book['title'])
-
+        
+        while len(cards) > 0:
+            repeat = []
             for card in cards:
-                if card['date'] <= date.today():
-                    successful = present_card(card)
-                    update_card(card, successful)
-                    print('')
-
-            rounds += 1
-            
-
+                successful = present_card(card)
+                if not successful:
+                    repeat.append(card)
+                print('')
+            cards = repeat
 
 
 if __name__ == '__main__':
-    data = load_json(json_path)
-    practice(data)
-    save_json(data, json_path)
+    user_data, book_data = load_data(json_path)
+    session_length = user_data.get('session_length', 10)
+    user_name = user_data.get('user_name', '')
+    print('\nHello', user_name + ', let\'s begin.\n')
+    total_cards = total_cards_due(book_data)
+    print('Total cards due:', total_cards)
+    print('Session length:', min(total_cards, session_length), 'cards\n')
+    practice(user_data, book_data)
+    save_data(user_data, book_data, json_path)

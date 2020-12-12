@@ -3,19 +3,21 @@ from datetime import datetime
 
 json_path = './data/gskaggs.json'
 
-def load_json(path):
+
+def load_data(path):
     with open(path) as json_file:
         data = json.load(json_file)
-
-        for book in data:
+        user_data, book_data = data['user'], data['books']
+        for book in book_data:
             for card in book['cards']:
                 card['date'] = datetime.strptime(card['date'], '%Y-%m-%d').date()
 
-        return data
+        return (user_data, book_data)
 
 
-def save_json(data, path):
+def save_data(user_data, book_data, path):
     with open(path, 'w') as json_file:
+        data = {'user': user_data, 'books': book_data}
         json.dump(data, json_file, indent=4, default=str)
 
 

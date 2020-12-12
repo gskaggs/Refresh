@@ -1,6 +1,19 @@
 from datetime import date
 
 
+def book_cards_due(book):
+    return sum([1 if card['date'] <= date.today() else 0 for card in book['cards']])
+
+
+def total_cards_due(data):
+    return sum([book_cards_due(book) for book in data])
+
+
+def get_cards_due(cards, limit):
+    due = [card for card in cards if card['date'] <= date.today()]
+    return due[:min(len(due), limit)]
+
+
 def vanilla_card():
     card = {}
     card['level'] = 1
