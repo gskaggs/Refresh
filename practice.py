@@ -63,7 +63,7 @@ def practice(user_data, book_data):
         
         if book_cards_due(book) == 0:
             continue
-        
+
         print('----------------------------------------------------------------------')
         print(book['title'], '\n')
         
@@ -85,9 +85,9 @@ if __name__ == '__main__':
     user_data, book_data = load_data(json_path)
     session_length = user_data.get('session_length', 10)
     user_name = user_data.get('user_name', '')
-    print('\nHello', user_name + ', let\'s begin.\n')
+    print('\nHello Mr.', user_name + ', let\'s get started.\n')
     total_cards = total_cards_due(book_data)
-    print('Total cards due:', total_cards)
-    print('Session length:', min(total_cards, session_length), 'cards\n')
+    print('Total cards due:  ', total_cards, 'cards')
+    print('Session length:   ', min(total_cards, session_length), 'cards\n')
     practice(user_data, book_data)
     save_data(user_data, book_data, json_path)

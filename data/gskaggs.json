@@ -1,200 +1,187 @@
 {
     "user": {
         "user_name": "Skaggs",
-        "session_length": 3
+        "session_length": 10
     },
     "books": [
+        {
+            "title": "Lao Tzu",
+            "cards": [
+                {
+                    "level": 3,
+                    "date": "2020-12-15",
+                    "quote": "Nature does not hurry, yet everything is accomplished.",
+                    "type": "quote"
+                }
+            ]
+        },
         {
             "title": "Never Split the Difference by Chris Voss",
             "cards": [
                 {
-                    "level": 2,
-                    "date": "2020-12-12",
+                    "level": 3,
+                    "date": "2020-12-15",
                     "front": "Accomadators",
                     "back": "high trait A. Very friendly. Be friendly with them. They might leave out objections or problem areas to avoid conflict\u00a0",
                     "type": "flash"
                 },
                 {
-                    "level": 2,
-                    "date": "2020-12-12",
+                    "level": 3,
+                    "date": "2020-12-15",
                     "front": "Accusation audit",
                     "back": "identifying all the reason\u2019s you counterpart might be angry with you.",
                     "type": "flash"
                 },
                 {
-                    "level": 2,
-                    "date": "2020-12-12",
+                    "level": 3,
+                    "date": "2020-12-15",
                     "front": "Labeling",
                     "back": "a type of tactical empathy; understanding your opponents emotions, articulating them, and respectfully verbalizing",
                     "type": "flash"
                 },
                 {
-                    "level": 2,
-                    "date": "2020-12-12",
-                    "front": "Four ways to say *no:*\u00a0",
-                    "back": "- *how am I supposed to do that?* \n- *thank you for your generous offer but that just doesn't work for me* \n- *I'm sorry but I just can't do that*\n- *I'm sorry no*",
-                    "type": "flash"
-                },
-                {
-                    "level": 2,
-                    "date": "2020-12-12",
+                    "level": 3,
+                    "date": "2020-12-15",
                     "front": "Positive leverage",
                     "back": "when you can provide something that your counterpart desires",
                     "type": "flash"
                 },
                 {
-                    "level": 2,
-                    "date": "2020-12-12",
+                    "level": 3,
+                    "date": "2020-12-15",
                     "front": "Normative leverage",
                     "back": "when you find inconsistencies in your opponents words and actions. Nobody likes to be a hypocrite find out what your counterparts usual behavior.",
                     "type": "flash"
                 },
                 {
-                    "level": 2,
-                    "date": "2020-12-12",
+                    "level": 3,
+                    "date": "2020-12-15",
                     "front": "Assertive",
                     "back": "time is money. Perfection not necessary. Winning is the goal. Prioritization of respect. Must be heard. Tell not ask. Every silence is an opportunity to speak more. If you're dealing with this type, mirrors and calibrated questions are both excellent options. Look for the that's right",
                     "type": "flash"
                 },
                 {
-                    "level": 2,
-                    "date": "2020-12-12",
+                    "level": 3,
+                    "date": "2020-12-15",
                     "front": "Thesis",
                     "back": "That negotiation is an exercise in tactical empathy and honing those skills can improve your life.",
                     "type": "flash"
                 },
                 {
-                    "level": 2,
-                    "date": "2020-12-12",
+                    "level": 3,
+                    "date": "2020-12-15",
                     "front": "The 7/38/55 rule",
                     "back": "7% of what we communicate is done so through the verbal word, 35% is through the tone and intonation, and 55% is through our body language.",
                     "type": "flash"
                 },
                 {
-                    "level": 2,
-                    "date": "2020-12-12",
+                    "level": 3,
+                    "date": "2020-12-15",
                     "front": "The three voices you should use when negotiating:",
                     "back": "The FM DJ voice: a self-assured voice of calm and reason, use it calm down your counterpart\nA positive playful voice: Use most of the time, encourages positivity and cooperation\u00a0\nAn assertive dominant voice: Use with caution",
                     "type": "flash"
                 },
                 {
-                    "level": 2,
-                    "date": "2020-12-12",
+                    "level": 3,
+                    "date": "2020-12-15",
                     "front": "There are three types of negotiators:",
                     "back": "- Assertives\u00a0\n- Accommodaters\n- Analysts",
                     "type": "flash"
                 },
                 {
-                    "level": 2,
-                    "date": "2020-12-12",
+                    "level": 3,
+                    "date": "2020-12-15",
                     "front": "Blackswan events",
                     "back": "Sudden surprising information which changes the balance of leverage in a negotiation",
                     "type": "flash"
                 },
                 {
-                    "level": 2,
-                    "date": "2020-12-12",
+                    "level": 3,
+                    "date": "2020-12-15",
                     "quote": "Assumptions blind, hypotheses guide.",
                     "type": "quote"
                 },
                 {
-                    "level": 2,
-                    "date": "2020-12-12",
+                    "level": 3,
+                    "date": "2020-12-15",
                     "front": "Negative leverage",
                     "back": "When you control something your counterpart wishes to avoid",
                     "type": "flash"
                 },
                 {
-                    "level": 2,
-                    "date": "2020-12-12",
+                    "level": 3,
+                    "date": "2020-12-15",
                     "front": "Analysts",
                     "back": " super high trait C. They prepare a lot and are very calculating but beware that you're not offputting by how cold you are. Hypersensitive to reciprocity. Highly introverted. Use data and reason with them. Not quick to answer calibrated questions",
                     "type": "flash"
                 },
                 {
-                    "level": 2,
-                    "date": "2020-12-12",
+                    "level": 3,
+                    "date": "2020-12-15",
                     "front": "Mirroring",
                     "back": "the concept of \"birds of a feather flock together.\" You send subtle signals that you're similar to your counterpart and should be bonding with. Seen often body language. Voss\u2019 recommendation: Repeat the last three words of what the person just said",
                     "type": "flash"
                 },
                 {
                     "level": 2,
-                    "date": "2020-12-12",
+                    "date": "2020-12-14",
                     "front": "There are 3 kinds of yes:",
                     "back": "- Counterfeit\u00a0\n- Confirmation\u00a0\n- Commitment",
                     "type": "flash"
                 },
                 {
-                    "level": 2,
-                    "date": "2020-12-12",
+                    "level": 3,
+                    "date": "2020-12-15",
                     "note": "The FBI developed their negotiation methods through iteration while having intense skin in the game.\\u00a0Harvard intellectuals did so through theory. Consequently, the FBI methods were superior.",
                     "type": "note"
                 },
                 {
-                    "level": 2,
-                    "date": "2020-12-12",
+                    "level": 3,
+                    "date": "2020-12-15",
                     "note": "Voss asks the same open ended questions until they get frustrated and give up",
                     "type": "note"
                 },
                 {
-                    "level": 2,
-                    "date": "2020-12-12",
+                    "level": 3,
+                    "date": "2020-12-15",
                     "note": "Good negotiator know they need to be ready for surprises. Great negotiators use their skills to reveal the surprises they're certain exist.\\u00a0",
                     "type": "note"
                 },
                 {
-                    "level": 2,
-                    "date": "2020-12-12",
+                    "level": 3,
+                    "date": "2020-12-15",
                     "note": "Your mindset should be that of discovery. Learn as much about the situation as possible",
                     "type": "note"
                 },
                 {
-                    "level": 2,
-                    "date": "2020-12-12",
-                    "note": "Yes can be inauthentic. When you say No, you know you're in control and not just being taken for a ride. For example, always ask \\\"is now a bad time?\\u201d Instead of \\u201cis now a good time?\\\" If you get a *no* you know the person is going to be focused and not just distractedly playing along.",
-                    "type": "note"
-                },
-                {
-                    "level": 2,
-                    "date": "2020-12-12",
+                    "level": 3,
+                    "date": "2020-12-16",
                     "note": "In general, *that's right* is what you\\u2019re looking for. It signals your counterpart believes they\\u2019ve come up with the solution themselves. Alternatively, *you're right* is bad and often dismissive.",
                     "type": "note"
                 },
                 {
-                    "level": 2,
-                    "date": "2020-12-12",
+                    "level": 3,
+                    "date": "2020-12-16",
                     "note": "Use your opponent's deadlines against them. Cars salesman are more likely to give good deals at end of the month, businessmen at end of the financial quarter.",
                     "type": "note"
                 },
                 {
-                    "level": 2,
-                    "date": "2020-12-12",
+                    "level": 3,
+                    "date": "2020-12-16",
                     "note": "Avoid anchoring (giving the first offer) in monetary bargaining. But beware of sharks who will give a ludicrous anchor to throw you off.",
                     "type": "note"
                 },
                 {
-                    "level": 2,
-                    "date": "2020-12-12",
+                    "level": 3,
+                    "date": "2020-12-16",
                     "note": "In a job interview or salary negotiation, ask \\\"what does it take to be successful here.\\\" That'll give the boss a personal stake in your success. You've just created an unofficial mentor",
                     "type": "note"
                 },
                 {
-                    "level": 2,
-                    "date": "2020-12-12",
+                    "level": 3,
+                    "date": "2020-12-16",
                     "note": "Who has control in a negotiation the talker or the listener? The listener of course. That's because the talker is revealing information.",
                     "type": "note"
-                }
-            ]
-        },
-        {
-            "title": "Lao Tzu",
-            "cards": [
-                {
-                    "level": 2,
-                    "date": "2020-12-12",
-                    "quote": "Nature does not hurry, yet everything is accomplished.",
-                    "type": "quote"
                 }
             ]
         }
