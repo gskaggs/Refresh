@@ -1,35 +1,33 @@
-import tkinter as tk
+#! /usr/bin/env python
 
+import tkinter as tk
+from practice import PracticeView
+from home import HomeView
 
 class MainView(tk.Frame):
-    def __init__(self, *args, **kwargs):
-        tk.Frame.__init__(self, *args, **kwargs)
-        p1 = Page1(self)
-        p2 = Page2(self)
-        p3 = Page3(self)
+    def __init__(self, master, data):
+        print(data)
+        tk.Frame.__init__(self)
+        self.create_views()
+        self.create_control_flow()
+        self.home_view.lift()
 
-        buttonframe = tk.Frame(self)
-        container = tk.Frame(self)
-        buttonframe.pack(side="top", fill="x", expand=False)
-        container.pack(side="top", fill="both", expand=True)
 
-        p1.place(in_=container, x=0, y=0, relwidth=1, relheight=1)
-        p2.place(in_=container, x=0, y=0, relwidth=1, relheight=1)
-        p3.place(in_=container, x=0, y=0, relwidth=1, relheight=1)
+    def create_control_flow(self):
+        self.practice_view.close = lambda: self.home_view.lift() 
 
-        b1 = tk.Button(buttonframe, text="Page 1", command=p1.lift)
-        b2 = tk.Button(buttonframe, text="Page 2", command=p2.lift)
-        b3 = tk.Button(buttonframe, text="Page 3", command=p3.lift)
 
-        b1.pack(side="left")
-        b2.pack(side="left")
-        b3.pack(side="left")
+    def create_views(self):
+        self.practice_view = PracticeView(self)
+        self.home_view = HomeView(self, self.practice_view)
 
-        p1.show()
+        self.practice_view.place(x=0, y=0, relwidth=1, relheight=1)
+        self.home_view.place(x=0, y=0, relwidth=1, relheight=1)
+
 
 if __name__ == "__main__":
     root = tk.Tk()
-    main = MainView(root)
+    main = MainView(root, ({}, []))
     main.pack(side="top", fill="both", expand=True)
     root.wm_geometry("400x400")
     root.mainloop()

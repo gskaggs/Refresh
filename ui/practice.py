@@ -2,8 +2,9 @@ import tkinter as tk
 
 
 class PracticeView(tk.Frame):
-    def __init__(self, master):
+    def __init__(self, master, close=None):
         tk.Frame.__init__(self, master)
+        self.close = close
         self.create_widgets()
         self.pack(side="top", fill="both", expand=True)
 
@@ -18,7 +19,7 @@ class PracticeView(tk.Frame):
         frame_buttons.pack(side="top", fill="x", expand=False)
         
         label_progress = tk.Label(frame_header, text='Question X of Y')
-        button_home = tk.Button(frame_header, text="End Session", command=lambda: print('bye'))
+        button_home = tk.Button(frame_header, text="End Session", command=lambda: self.close())
 
         button_home.pack(side="left")
         label_progress.pack(side="right", padx=15)
