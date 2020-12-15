@@ -1,93 +1,69 @@
-#! /usr/bin/python3
+import tkinter as tk
+from io_utils import load_data, json_path
+from practice_controller import PracticeController
 
-import random
-from datetime import date, timedelta
-from io_utils import load_data, save_data, json_path
-from card_utils import total_cards_due, book_cards_due, get_cards_due
+class PracticeView(tk.Frame):
+    def __init__(self, master, data, close=lambda: None):
+        tk.Frame.__init__(self, master)
+        self.controller = PracticeController(data)
+        self.card_front, self.card_back = self.controller.next_card()
+        self.state = 'front'
 
-def generate_front(quote):
-    quote = quote.split()
-    N = len(quote)
-    K = N//4
-
-    for i in random.choices(range(N), k=K):
-        quote[i] = ''.join(['_'] * len(quote[i]))
-
-    return ' '.join(quote)
+        self.close = close
+        create_widgets()
+        self.pack(side="top", fill="both", expand=True)
 
 
-def get_front_back(card):
-    card_type = card['type']
-    if card_type == 'flash':
-        return (card['front'], card['back'])
-
-    if card_type == 'quote':
-        quote = card['quote']
-        return ('"' + generate_front(quote) + '"', '"' + quote + '"')
-
-    if card_type == 'note':
-        note = card['note']
-        return (generate_front(note), note)
-
-
-def present_card(card):
-    front, back = get_front_back(card)
-    
-    responses = []
-    responses.append(input(front + '\n'))
-    responses.append(input(back +  '\n'))
-    successful = all([response.lower().strip() != 'f' for response in responses])
-    update_card(card, successful)
-    return successful
+    def change_sate(self):
+        if self.state == 'front':
+            self.button_fail.config(state=tk.NORMAL)
+            self.button_pass.config(text='P')
+            self.label_quote.config(text=self.card_back)
+            self.state = 'back'
+        elif self.state == 'back':
+            self.button_fail.config(state=tk.DISABLED)
+            self.button_pass.config(text='N')
+            self.card_front, self.card_back = self.controller.next_card()
+            self.label_quote.config(text=self.card_front)
+            self.state = 'front'
 
 
-def update_card(card, successful):
-    level_to_days = {1: 1, 2: 3, 3: 7, 4: 14, 5: 21}
-    level = card['level']
-    if successful:
-        card['date'] = date.today() + timedelta(days=level_to_days[level])
-        card['level'] = min(card['level'] + 1, 5)
-    else:
-        card['level'] = 1
+    def button_fail_pressed(self):
+        self.controller.update_card(False)
+        self.change_sate()
 
 
-def practice(user_data, book_data):
-    session_length = user_data.get('session_length', 10)
-    card_count = 0
+    def button_pass_pressed(self):
+        if self.state == 'back':
+            self.controller.update_card(True)
+        self.change_sate()
 
-    random.shuffle(book_data)
 
-    for book in book_data:
-        if card_count >= session_length:
-            break
+    def create_widgets(self):
+        frame_header = tk.Frame(self)
+        frame_buttons = tk.Frame(self)
+        self.label_quote = tk.Label(self, text=self.card_front)
+
+        frame_header.pack(side="top", fill="x", expand=False)
+        self.label_quote.pack(side="top", fill="both", expand=True)
+        frame_buttons.pack(side="top", fill="x", expand=False)
         
-        if book_cards_due(book) == 0:
-            continue
+        label_progress = tk.Label(frame_header, text='Question X of Y')
+        button_home = tk.Button(frame_header, text="End Session", command=lambda: self.close())
 
-        print('----------------------------------------------------------------------')
-        print(book['title'], '\n')
-        
-        cards = get_cards_due(book['cards'], session_length - card_count)
-        card_count += len(cards)
-        random.shuffle(cards)
-        
-        while len(cards) > 0:
-            repeat = []
-            for card in cards:
-                successful = present_card(card)
-                if not successful:
-                    repeat.append(card)
-                print('')
-            cards = repeat
+        button_home.pack(side="left")
+        label_progress.pack(side="right", padx=15)
+
+        self.button_fail = tk.Button(frame_buttons, state='disabled', text="F", command=lambda: self.button_fail_pressed())
+        self.button_pass = tk.Button(frame_buttons, text='N', command=lambda: self.button_pass_pressed())
+
+        self.button_fail.pack(side='left', fill='x', pady=10, padx=10, expand=True)
+        self.button_pass.pack(side='left', fill='x', pady=10, padx=10, expand=True)
 
 
-if __name__ == '__main__':
-    user_data, book_data = load_data(json_path)
-    session_length = user_data.get('session_length', 10)
-    user_name = user_data.get('user_name', '')
-    print('\nHello Mr.', user_name + ', let\'s get started.\n')
-    total_cards = total_cards_due(book_data)
-    print('Total cards due:  ', total_cards, 'cards')
-    print('Session length:   ', min(total_cards, session_length), 'cards\n')
-    practice(user_data, book_data)
-    save_data(user_data, book_data, json_path)
+if __name__ == "__main__":
+    data = load_data(json_path)
+    root = tk.Tk()
+    main = PracticeView(root, data)
+    root.wm_geometry("400x400")
+    root.mainloop()

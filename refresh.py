@@ -1,77 +1,13 @@
 #! /usr/bin/env python
 
 import tkinter as tk
-
-def practice(event):
-    print('hello')
-
-
-# window = tk.Tk()
-# lbl_greeting = tk.Label(text='Hello Mr. Skaggs, let\'s get started.', width=100)
-# lbl_greeting.pack(fill=tk.BOTH, side=tk.TOP, expand=True, padx=5, pady=10)
-
-# btn_practice = tk.Button(text='Practice!', height=10, command=practice)
-# btn_practice.pack(fill=tk.BOTH, side=tk.TOP, expand=True, padx=5, pady=5)
-
-# btn_practice = tk.Button(text='Add cards!', height=10, command=practice)
-# btn_practice.pack(fill=tk.BOTH, side=tk.TOP, expand=True, padx=5, pady=5)
-
-# window.mainloop()
-
-
-class Page(tk.Frame):
-    def __init__(self, *args, **kwargs):
-        tk.Frame.__init__(self, *args, **kwargs)
-    def show(self):
-        self.lift()
-
-class Page1(Page):
-   def __init__(self, *args, **kwargs):
-       Page.__init__(self, *args, **kwargs)
-       label = tk.Label(self, text="This is page 1")
-       label.pack(side="top", fill="both", expand=True)
-
-class Page2(Page):
-   def __init__(self, *args, **kwargs):
-       Page.__init__(self, *args, **kwargs)
-       label = tk.Label(self, text="This is page 2")
-       label.pack(side="top", fill="both", expand=True)
-
-class Page3(Page):
-   def __init__(self, *args, **kwargs):
-       Page.__init__(self, *args, **kwargs)
-       label = tk.Label(self, text="This is page 3")
-       label.pack(side="top", fill="both", expand=True)
-
-class MainView(tk.Frame):
-    def __init__(self, *args, **kwargs):
-        tk.Frame.__init__(self, *args, **kwargs)
-        p1 = Page1(self)
-        p2 = Page2(self)
-        p3 = Page3(self)
-
-        buttonframe = tk.Frame(self)
-        container = tk.Frame(self)
-        buttonframe.pack(side="top", fill="x", expand=False)
-        container.pack(side="top", fill="both", expand=True)
-
-        p1.place(in_=container, x=0, y=0, relwidth=1, relheight=1)
-        p2.place(in_=container, x=0, y=0, relwidth=1, relheight=1)
-        p3.place(in_=container, x=0, y=0, relwidth=1, relheight=1)
-
-        b1 = tk.Button(buttonframe, text="Page 1", command=p1.lift)
-        b2 = tk.Button(buttonframe, text="Page 2", command=p2.lift)
-        b3 = tk.Button(buttonframe, text="Page 3", command=p3.lift)
-
-        b1.pack(side="left")
-        b2.pack(side="left")
-        b3.pack(side="left")
-
-        p1.show()
+from ui.main import MainView
+from io_utils import load_data, json_path
 
 if __name__ == "__main__":
+    data = load_data(json_path)
     root = tk.Tk()
-    main = MainView(root)
+    main = MainView(root, data)
     main.pack(side="top", fill="both", expand=True)
     root.wm_geometry("400x400")
     root.mainloop()
