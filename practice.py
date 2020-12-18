@@ -3,16 +3,28 @@ from io_utils import load_data, json_path
 from practice_controller import PracticeController
 
 class PracticeView(tk.Frame):
-    def __init__(self, master, data, close=lambda: None):
+    def __init__(self, master, close=lambda: None):
         tk.Frame.__init__(self, master)
-        self.controller = PracticeController(data)
-        self.card_front, self.card_back = self.controller.next_card()
-        self.state = 'front'
-
         self.close = close
-        create_widgets()
+        self.create_widgets()
         self.pack(side="top", fill="both", expand=True)
 
+
+    def view_will_appear(self, data):
+        self.controller = PracticeController(data)
+        first_card = self.controller.next_card()
+        if first_card == None:
+            self.close()
+        self.card_front, self.card_back = first_card
+        self.label_quote.config(text=self.card_front)
+        self.button_fail.config(state=tk.DISABLED)
+        self.button_pass.config(text='N')
+        self.reset_progress_bar()
+        self.state = 'front'
+
+    def reset_progress_bar(self):
+        progress, session_length = self.controller.get_progress()
+        self.label_progress.config(text='Question %d of %d' % (progress + 1, session_length))
 
     def change_sate(self):
         if self.state == 'front':
@@ -23,10 +35,16 @@ class PracticeView(tk.Frame):
         elif self.state == 'back':
             self.button_fail.config(state=tk.DISABLED)
             self.button_pass.config(text='N')
-            self.card_front, self.card_back = self.controller.next_card()
-            self.label_quote.config(text=self.card_front)
             self.state = 'front'
-
+            next_card = self.controller.next_card()
+            if next_card == None:
+                self.close()
+            else:
+                self.card_front, self.card_back = next_card
+                self.label_quote.config(text=self.card_front)
+        
+        self.reset_progress_bar()
+            
 
     def button_fail_pressed(self):
         self.controller.update_card(False)
@@ -42,17 +60,17 @@ class PracticeView(tk.Frame):
     def create_widgets(self):
         frame_header = tk.Frame(self)
         frame_buttons = tk.Frame(self)
-        self.label_quote = tk.Label(self, text=self.card_front)
+        self.label_quote = tk.Label(self, text='')
 
         frame_header.pack(side="top", fill="x", expand=False)
         self.label_quote.pack(side="top", fill="both", expand=True)
         frame_buttons.pack(side="top", fill="x", expand=False)
         
-        label_progress = tk.Label(frame_header, text='Question X of Y')
+        self.label_progress = tk.Label(frame_header, text='Question X of Y')
         button_home = tk.Button(frame_header, text="End Session", command=lambda: self.close())
 
         button_home.pack(side="left")
-        label_progress.pack(side="right", padx=15)
+        self.label_progress.pack(side="right", padx=15)
 
         self.button_fail = tk.Button(frame_buttons, state='disabled', text="F", command=lambda: self.button_fail_pressed())
         self.button_pass = tk.Button(frame_buttons, text='N', command=lambda: self.button_pass_pressed())

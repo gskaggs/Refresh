@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 
 import tkinter as tk
-from ui.main import MainView
+from main import MainView
 from io_utils import load_data, json_path
 
 if __name__ == "__main__":
