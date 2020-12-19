@@ -37,9 +37,8 @@ class MainView(tk.Frame):
 
 
     def end_quick_add(self):
-        # self.book_data.extend(self.quick_add_view.cards)
-        # save_data(self.user_data, self.book_data, json_path)
-        print(self.quick_add_view.cards)
+        self.book_data.extend(self.quick_add_view.get_data())
+        save_data(self.user_data, self.book_data, json_path)
         self.show_home()
 
 
