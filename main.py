@@ -12,6 +12,7 @@ class MainView(tk.Frame):
         self.user_data, self.book_data = data
         self.create_views()
         self.create_control_flow()
+        self.home_view.view_will_appear(self.data)
         self.home_view.lift()
 
 

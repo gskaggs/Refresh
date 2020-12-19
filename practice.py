@@ -5,6 +5,7 @@ from practice_controller import PracticeController
 class PracticeView(tk.Frame):
     def __init__(self, master, close=lambda: None):
         tk.Frame.__init__(self, master)
+        self.master = master
         self.close = close
         self.create_widgets()
         self.pack(side="top", fill="both", expand=True)
@@ -60,7 +61,8 @@ class PracticeView(tk.Frame):
     def create_widgets(self):
         frame_header = tk.Frame(self)
         frame_buttons = tk.Frame(self)
-        self.label_quote = tk.Label(self, text='')
+
+        self.label_quote = tk.Label(self, text='', wraplength=300)
 
         frame_header.pack(side="top", fill="x", expand=False)
         self.label_quote.pack(side="top", fill="both", expand=True)
