@@ -1,6 +1,6 @@
 import random
 from datetime import date
-from card_utils import total_cards_due, generate_card_stack, update_card, get_front_back
+from card_utils import total_cards_due, generate_card_stack, update_card, get_front_back, hash_card
 
 class PracticeController:
     def __init__(self, data):
@@ -9,8 +9,12 @@ class PracticeController:
         self.session_length = min(self.user_data.get('session_length', 10), total_due)
         self.progress_count = 0
 
-        self.card_stack = generate_card_stack(self.book_data, self.session_length)
+        self.card_stack, self.card_titles = generate_card_stack(self.book_data, self.session_length)
         self.repeat = []
+
+
+    def get_cur_title(self):
+        return self.card_titles[hash_card(self.cur_card)]
 
 
     def get_progress(self):

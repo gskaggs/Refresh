@@ -21,6 +21,7 @@ class PracticeView(tk.Frame):
         self.label_quote.config(text=self.card_front)
         self.button_fail.config(state=tk.DISABLED)
         self.button_pass.config(text='N')
+        self.label_title.config(text=self.controller.get_cur_title())
         self.reset_progress_bar()
         self.state = 'front'
 
@@ -46,6 +47,7 @@ class PracticeView(tk.Frame):
                 self.label_quote.config(text=self.card_front)
         
         self.reset_progress_bar()
+        self.label_title.config(text=self.controller.get_cur_title())
             
 
     def button_fail_pressed(self):
@@ -63,11 +65,12 @@ class PracticeView(tk.Frame):
         frame_header = tk.Frame(self)
         frame_buttons = tk.Frame(self)
 
-        fontStyle = tkFont.Font(size=20)
-        self.label_quote = tk.Label(self, text='', wraplength=300, font=fontStyle)
+        self.label_title = tk.Label(self, text='')
+        self.label_quote = tk.Label(self, text='', wraplength=300, font=tkFont.Font(size=20))
 
         frame_header.pack(side="top", fill="x", expand=False, pady=5)
-        self.label_quote.pack(side="top", fill="both", expand=True)
+        self.label_quote.pack(side="top", fill="both", pady=(60,0), expand=True)
+        self.label_title.pack(side="top", pady=(0,60))
         frame_buttons.pack(side="top", fill="x", expand=False)
         
         self.label_progress = tk.Label(frame_header, text='Question X of Y')

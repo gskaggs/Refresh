@@ -8,7 +8,7 @@ from quick_add import QuickAddView
 
 class MainView(tk.Frame):
     def __init__(self, master, data):
-        tk.Frame.__init__(self, width=800,height=600)
+        tk.Frame.__init__(self, width=800,height=500)
         self.data = data
         self.user_data, self.book_data = data
         self.create_views()

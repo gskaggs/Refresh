@@ -1,6 +1,31 @@
 from datetime import date, timedelta
 import random
 
+M = 2 ** 64
+P = 53
+
+def hash_string(string):
+    res = 0
+    for idx, char in enumerate(string[:15]):
+        res += (P ** idx) * ord(char)
+        res %= M
+    return res
+
+
+def hash_card(card):
+    card_type = card['type']
+    string = '<Void>'
+    if card_type == 'flash':
+        string = card['front'] + card['back']
+
+    if card_type == 'quote':
+        string = card['quote']
+
+    if card_type == 'note':
+        string = card['note']
+    
+    return hash_string(string)
+
 def book_cards_due(book):
     return sum([1 if card['date'] <= date.today() else 0 for card in book['cards']])
 
@@ -51,14 +76,18 @@ def update_card(card, successful):
 
 def generate_card_stack(book_data, session_length):
     stack = []
+    titles = {}
     random.shuffle(book_data)
     for book in book_data:
         if len(stack) > session_length:
             break
         random.shuffle(book['cards'])
         cards = get_cards_due(book['cards'], session_length - len(stack))
+        for card in cards:
+            titles[hash_card(card)] = book['title']
         stack.extend(cards)
-    return stack
+    
+    return stack, titles
 
 
 def vanilla_card():

@@ -22,10 +22,10 @@ class HomeView(tk.Frame):
         self.lbl_greeting.pack(fill=tk.BOTH, side=tk.TOP, expand=False, padx=5, pady=(20, 10))
 
         self.btn_practice = tk.Button(self, text='Practice!', command=lambda: self.start_practice())
-        self.btn_practice.pack(fill='x', side=tk.TOP, expand=False, padx=50, pady=5)
+        self.btn_practice.pack(fill='x', side=tk.TOP, expand=False, padx=150, pady=5)
 
         self.btn_add_cards = tk.Button(self, text='Add cards', command=lambda: self.start_quick_add())
-        self.btn_add_cards.pack(fill='x', side=tk.TOP, expand=False, padx=50, pady=5)
+        self.btn_add_cards.pack(fill='x', side=tk.TOP, expand=False, padx=150, pady=5)
 
         self.lbl_progress = tk.Label(self, text='')
         self.lbl_progress.pack(fill='x', side=tk.BOTTOM, expand=False, padx=50, pady=20)

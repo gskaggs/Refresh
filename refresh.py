@@ -11,5 +11,5 @@ if __name__ == "__main__":
     root['bg'] = '#222222'
     main = MainView(root, data)
     main.pack(side="top", expand=True)
-    root.wm_geometry("800x600")
+    root.wm_geometry("800x500")
     root.mainloop()
