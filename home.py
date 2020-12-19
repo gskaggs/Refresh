@@ -3,10 +3,10 @@ from card_utils import total_cards_due
 
 
 class HomeView(tk.Frame):
-    def __init__(self, master, practice_view, start_practice=lambda: None):
+    def __init__(self, master):
         tk.Frame.__init__(self, master)
-        self.practice_view = practice_view
-        self.start_practice = start_practice
+        self.start_practice = lambda: None
+        self.start_quick_add = lambda: None
         self.create_widgets()
         self.pack(side="top", fill="both", expand=True, pady=75)
 
@@ -24,7 +24,7 @@ class HomeView(tk.Frame):
         self.btn_practice = tk.Button(self, text='Practice!', command=lambda: self.start_practice())
         self.btn_practice.pack(fill='x', side=tk.TOP, expand=False, padx=50, pady=5)
 
-        self.btn_add_cards = tk.Button(self, text='Add cards', command=lambda: None)
+        self.btn_add_cards = tk.Button(self, text='Add cards', command=lambda: self.start_quick_add())
         self.btn_add_cards.pack(fill='x', side=tk.TOP, expand=False, padx=50, pady=5)
 
         self.lbl_progress = tk.Label(self, text='')

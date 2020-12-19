@@ -15,7 +15,6 @@ class QuickAddView(tk.Frame):
 
     def view_will_appear(self, data):
         self.cards = []
-        return None
 
 
     def submit(self):
@@ -37,7 +36,7 @@ class QuickAddView(tk.Frame):
 
     def create_widgets(self):
         frame_header = tk.Frame(self)
-        button_home = tk.Button(frame_header, text="End Session", command=lambda: self.close())
+        button_home = tk.Button(frame_header, text="Home / Save", command=lambda: self.close())
         button_home.pack(side="left")
         frame_header.pack(side="top", fill="x", expand=False, pady=10)
 
