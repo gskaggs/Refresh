@@ -20,6 +20,7 @@ class QuickAddView(tk.Frame):
     def get_data(self):
         return [{'title': title, 'cards': self.cards[title]} for title in self.cards]
 
+
     def submit(self):
         raw = self.text.get('1.0', tk.END)[:-1]
         if len(raw) == 0:
@@ -41,11 +42,12 @@ class QuickAddView(tk.Frame):
         self.cards[book_title] = book
         self.text.delete('1.0', tk.END)
 
+
     def create_widgets(self):
         frame_header = tk.Frame(self)
         button_home = tk.Button(frame_header, text="Home", command=lambda: self.close())
         button_home.pack(side="left", padx=20)
-        frame_header.pack(side="top", fill="x", expand=False, pady=10)
+        frame_header.pack(side="top", fill="x", expand=False, pady=5)
 
         frame_types = tk.Frame(self)
         tk.Radiobutton(frame_types, text="Quote",     variable=self.type, padx=10, value=1).pack(side='left', expand=True)
@@ -61,7 +63,6 @@ class QuickAddView(tk.Frame):
 
         self.btn_submit = tk.Button(self, text='Add card', command=lambda: self.submit())
         self.btn_submit.pack(fill='x', side='top', expand=False, padx=50, pady=(5, 10))
-
 
 
 if __name__ == "__main__":

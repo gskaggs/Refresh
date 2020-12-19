@@ -64,14 +64,14 @@ class PracticeView(tk.Frame):
 
         self.label_quote = tk.Label(self, text='', wraplength=300)
 
-        frame_header.pack(side="top", fill="x", expand=False)
+        frame_header.pack(side="top", fill="x", expand=False, pady=5)
         self.label_quote.pack(side="top", fill="both", expand=True)
         frame_buttons.pack(side="top", fill="x", expand=False)
         
         self.label_progress = tk.Label(frame_header, text='Question X of Y')
         button_home = tk.Button(frame_header, text="End Session", command=lambda: self.close())
 
-        button_home.pack(side="left")
+        button_home.pack(side="left", padx=10)
         self.label_progress.pack(side="right", padx=15)
 
         self.button_fail = tk.Button(frame_buttons, state='disabled', text="F", command=lambda: self.button_fail_pressed())
