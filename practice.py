@@ -1,6 +1,7 @@
 import tkinter as tk
 from io_utils import load_data, json_path
 from practice_controller import PracticeController
+import tkinter.font as tkFont
 
 class PracticeView(tk.Frame):
     def __init__(self, master, close=lambda: None):
@@ -62,7 +63,8 @@ class PracticeView(tk.Frame):
         frame_header = tk.Frame(self)
         frame_buttons = tk.Frame(self)
 
-        self.label_quote = tk.Label(self, text='', wraplength=300)
+        fontStyle = tkFont.Font(size=20)
+        self.label_quote = tk.Label(self, text='', wraplength=300, font=fontStyle)
 
         frame_header.pack(side="top", fill="x", expand=False, pady=5)
         self.label_quote.pack(side="top", fill="both", expand=True)

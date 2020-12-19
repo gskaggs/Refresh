@@ -19,7 +19,7 @@ class HomeView(tk.Frame):
 
     def create_widgets(self):
         self.lbl_greeting = tk.Label(self, text='Hello Mr. Skaggs, let\'s get started.')
-        self.lbl_greeting.pack(fill=tk.BOTH, side=tk.TOP, expand=False, padx=5, pady=(30, 10))
+        self.lbl_greeting.pack(fill=tk.BOTH, side=tk.TOP, expand=False, padx=5, pady=(20, 10))
 
         self.btn_practice = tk.Button(self, text='Practice!', command=lambda: self.start_practice())
         self.btn_practice.pack(fill='x', side=tk.TOP, expand=False, padx=50, pady=5)
