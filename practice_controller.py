@@ -1,6 +1,6 @@
 import random
 from datetime import date
-from card_utils import total_cards_due, generate_card_stack, update_card, get_front_back, hash_card
+from utils.card_utils import total_cards_due, generate_card_stack, update_card, get_front_back, hash_card
 
 class PracticeController:
     def __init__(self, data):

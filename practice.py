@@ -1,5 +1,5 @@
 import tkinter as tk
-from io_utils import load_data, json_path
+from utils.io_utils import load_data, json_path
 from practice_controller import PracticeController
 import tkinter.font as tkFont
 

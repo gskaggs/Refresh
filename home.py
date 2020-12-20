@@ -1,5 +1,5 @@
 import tkinter as tk
-from card_utils import total_cards_due
+from utils.card_utils import total_cards_due
 
 
 class HomeView(tk.Frame):

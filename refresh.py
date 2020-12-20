@@ -2,7 +2,7 @@
 
 import tkinter as tk
 from main import MainView
-from io_utils import load_data, json_path
+from utils.io_utils import load_data, json_path
 
 if __name__ == "__main__":
     data = load_data(json_path)

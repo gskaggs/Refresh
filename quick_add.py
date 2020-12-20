@@ -1,5 +1,5 @@
 import tkinter as tk
-from card_utils import note_card, quote_card, flash_card
+from utils.card_utils import note_card, quote_card, flash_card
 
 
 class QuickAddView(tk.Frame):

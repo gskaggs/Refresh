@@ -2,7 +2,7 @@
 
 import tkinter as tk
 from practice import PracticeView
-from io_utils import save_data, json_path
+from utils.io_utils import save_data, json_path
 from home import HomeView
 from quick_add import QuickAddView
 
