@@ -82,6 +82,8 @@ def practice(user_data, book_data):
 
 
 if __name__ == '__main__':
+    print('This script is archived and only included if someone wants to develop on it.')
+    exit()
     user_data, book_data = load_data(json_path)
     session_length = user_data.get('session_length', 10)
     user_name = user_data.get('user_name', '')

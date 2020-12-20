@@ -47,6 +47,8 @@ def add_book(data):
 
 
 if __name__ == '__main__':
+    print('This script is archived and only included if someone wants to develop on it.')
+    exit()
     user_data, book_data = load_data(json_path)
     add_book(book_data)
     save_data(user_data, book_data, json_path)
