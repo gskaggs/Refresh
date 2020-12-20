@@ -1,7 +1,7 @@
 import tkinter as tk
 from utils.card_utils import note_card, quote_card, flash_card
 
-
+# Allows the user to add cards easily
 class QuickAddView(tk.Frame):
     def __init__(self, master, close=lambda: None):
         tk.Frame.__init__(self, master)
@@ -17,16 +17,16 @@ class QuickAddView(tk.Frame):
         self.cards = {}
         self.txt_title.delete('1.0',tk.END)
         self.txt_title.insert('1.0','Title / Author')
-        self.text.delete('1.0',tk.END)
-        self.text.insert('1.0','Content')
+        self.txt_content.delete('1.0',tk.END)
+        self.txt_content.insert('1.0','Content')
 
 
     def get_data(self):
         return [{'title': title, 'cards': self.cards[title]} for title in self.cards]
 
 
-    def submit(self):
-        raw = self.text.get('1.0', tk.END)[:-1]
+    def submit_pressed(self):
+        raw = self.txt_content.get('1.0', tk.END)[:-1]
         if len(raw) == 0:
             return
 
@@ -44,13 +44,13 @@ class QuickAddView(tk.Frame):
         book = self.cards.get(book_title, [])
         book.append(card)
         self.cards[book_title] = book
-        self.text.delete('1.0', tk.END)
+        self.txt_content.delete('1.0', tk.END)
 
 
     def create_widgets(self):
         frame_header = tk.Frame(self)
-        button_home = tk.Button(frame_header, text="Home", command=lambda: self.close())
-        button_home.pack(side="left", padx=20)
+        btn_home = tk.Button(frame_header, text="Home", command=lambda: self.close())
+        btn_home.pack(side="left", padx=20)
         frame_header.pack(side="top", fill="x", expand=False, pady=5)
 
         frame_types = tk.Frame(self)
@@ -62,13 +62,14 @@ class QuickAddView(tk.Frame):
         self.txt_title = tk.Text(self, height=1)
         self.txt_title.pack(side='top', fill='x', padx=20, pady=(10, 0), expand=False)
 
-        self.text = tk.Text(self, height=17)
-        self.text.pack(side='top', fill='x', padx=20, pady=10, expand=False)
+        self.txt_content = tk.Text(self, height=17)
+        self.txt_content.pack(side='top', fill='x', padx=20, pady=10, expand=False)
 
-        self.btn_submit = tk.Button(self, text='Add card', command=lambda: self.submit())
+        self.btn_submit = tk.Button(self, text='Add card', command=lambda: self.submit_pressed())
         self.btn_submit.pack(fill='x', side='top', expand=False, padx=50, pady=(5, 10))
 
 
+# Used for testing
 if __name__ == "__main__":
     root = tk.Tk()
     main = QuickAddView(root)

@@ -1,7 +1,7 @@
 import random
-from datetime import date
 from utils.card_utils import total_cards_due, generate_card_stack, update_card, get_front_back, hash_card
 
+# Controls the internal logic for the practice view
 class PracticeController:
     def __init__(self, data):
         self.user_data, self.book_data = data

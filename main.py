@@ -1,11 +1,10 @@
-#! /usr/bin/env python
-
 import tkinter as tk
-from practice import PracticeView
 from utils.io_utils import save_data, json_path
+from practice import PracticeView
 from home import HomeView
 from quick_add import QuickAddView
 
+# Organizes the various windows of the app
 class MainView(tk.Frame):
     def __init__(self, master, data):
         tk.Frame.__init__(self, width=800,height=500)

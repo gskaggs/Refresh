@@ -1,7 +1,7 @@
 import tkinter as tk
 from utils.card_utils import total_cards_due
 
-
+# The home view for the app
 class HomeView(tk.Frame):
     def __init__(self, master):
         tk.Frame.__init__(self, master)
@@ -10,12 +10,14 @@ class HomeView(tk.Frame):
         self.create_widgets()
         self.pack(side="top", fill="both", expand=True, pady=75)
 
+
     def view_will_appear(self, data):
         _, book_data = data
         total_due = total_cards_due(book_data)
         self.lbl_progress.config(text='%d cards due today' % total_due)
         btn_practice_state = tk.NORMAL if total_due > 0 else tk.DISABLED
         self.btn_practice.config(state=btn_practice_state)
+
 
     def create_widgets(self):
         self.lbl_greeting = tk.Label(self, text='Hello Mr. Skaggs, let\'s get started.')
@@ -31,6 +33,7 @@ class HomeView(tk.Frame):
         self.lbl_progress.pack(fill='x', side=tk.BOTTOM, expand=False, padx=50, pady=20)
 
 
+# Used for testing
 if __name__ == "__main__":
     root = tk.Tk()
     main = HomeView(root)
