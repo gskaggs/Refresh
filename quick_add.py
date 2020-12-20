@@ -15,6 +15,10 @@ class QuickAddView(tk.Frame):
 
     def view_will_appear(self, data):
         self.cards = {}
+        self.txt_title.delete('1.0',tk.END)
+        self.txt_title.insert('1.0','Title / Author')
+        self.text.delete('1.0',tk.END)
+        self.text.insert('1.0','Content')
 
 
     def get_data(self):
