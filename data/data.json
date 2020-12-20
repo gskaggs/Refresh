@@ -1,0 +1,7 @@
+{
+    "user": {
+        "user_name": "Foo",
+        "session_length": 10
+    },
+    "books": [ ]
+}
