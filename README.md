@@ -10,9 +10,9 @@ Refresh uses a form of [spaced repetition](https://en.wikipedia.org/wiki/Spaced_
 
 Spaced repetition is based on the observation that the [forgetting curve](https://en.wikipedia.org/wiki/Forgetting_curve) of a piece of information improves with repetition. The Leitner system is designed to remind users of information optimally so as to only show a card when the user is in danger of forgetting it. Graphically this concept is depicted here:
 
-![](./public/forgetting_curve.png)
+<img src='./public/forgetting_curve.png' style='margin-left: auto; margin-right: auto;'/>
 
-Similar to the Anki flashcards system, Refresh determines whether or not a card was answered correctly based on the user's discretion. The application also allows users to input new cards directly via the GUI. Unlike Anki, however, Refresh has the capability to conveniently create new flashcards based on quotes, by auto generating holes in the quote.
+Similar to the Anki flashcards system, Refresh determines whether or not a card was answered correctly based on the user's discretion. The application also allows users to input new cards directly via the GUI. Unlike Anki, however, Refresh has the capability to conveniently create new flashcards based on quotes, by auto-generating holes in quotes.
 
 All aspects of the application were programmed in Python. User data is saved in the `data/data.json` file, although this can be changed by modifying the variable `json_path` in `utils/io_utils.py`. If you'd like to change your username or delete any cards you'll need to modify the `data/data.json` file.
 
