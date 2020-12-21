@@ -10,7 +10,9 @@ Refresh uses a form of [spaced repetition](https://en.wikipedia.org/wiki/Spaced_
 
 Spaced repetition is based on the observation that the [forgetting curve](https://en.wikipedia.org/wiki/Forgetting_curve) of a piece of information improves with repetition. The Leitner system is designed to remind users of information optimally so as to only show a card when the user is in danger of forgetting it. Graphically this concept is depicted here:
 
-<img src='./public/forgetting_curve.png' style='margin-left: auto; margin-right: auto;'/>
+<p align="center">
+<img src='./public/forgetting_curve.png'/>
+</p>
 
 Similar to the Anki flashcards system, Refresh determines whether or not a card was answered correctly based on the user's discretion. The application also allows users to input new cards directly via the GUI. Unlike Anki, however, Refresh has the capability to conveniently create new flashcards based on quotes, by auto-generating holes in quotes.
 
