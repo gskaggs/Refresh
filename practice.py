@@ -20,7 +20,7 @@ class PracticeView(tk.Frame):
         self.card_front, self.card_back = first_card
         self.lbl_quote.config(text=self.card_front)
         self.btn_fail.config(state=tk.DISABLED)
-        self.btn_pass.config(text='Next')
+        self.btn_pass.config(text='Flip')
         self.lbl_title.config(text=self.controller.get_cur_title())
         self.reset_progress_bar()
         self.state = 'front'
@@ -39,7 +39,7 @@ class PracticeView(tk.Frame):
             self.state = 'back'
         elif self.state == 'back':
             self.btn_fail.config(state=tk.DISABLED)
-            self.btn_pass.config(text='Next')
+            self.btn_pass.config(text='Flip')
             self.state = 'front'
             next_card = self.controller.next_card()
             if next_card == None:
