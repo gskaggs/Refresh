@@ -1,7 +1,7 @@
 import json
 from datetime import datetime
 
-json_path = './data/gskaggs.json'
+json_path = './data/data.json'
 
 
 def load_data(path):
