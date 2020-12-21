@@ -12,15 +12,20 @@ class HomeView(tk.Frame):
 
 
     def view_will_appear(self, data):
-        _, book_data = data
+        user_data, book_data = data
         total_due = total_cards_due(book_data)
-        self.lbl_progress.config(text='%d cards due today' % total_due)
+        user_name = user_data.get('user_name', 'Skaggs')
+        if total_due == 1:
+            self.lbl_progress.config(text='%d card due today' % total_due)
+        else:
+            self.lbl_progress.config(text='%d cards due today' % total_due)
+        self.lbl_greeting.config(text='Hello %s, let\'s get started.' % user_name)
         btn_practice_state = tk.NORMAL if total_due > 0 else tk.DISABLED
         self.btn_practice.config(state=btn_practice_state)
 
 
     def create_widgets(self):
-        self.lbl_greeting = tk.Label(self, text='Hello Mr. Skaggs, let\'s get started.')
+        self.lbl_greeting = tk.Label(self, text='Hello, let\'s get started.')
         self.lbl_greeting.pack(fill=tk.BOTH, side=tk.TOP, expand=False, padx=5, pady=(20, 10))
 
         self.btn_practice = tk.Button(self, text='Practice!', command=lambda: self.start_practice())

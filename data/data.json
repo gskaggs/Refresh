@@ -3,5 +3,17 @@
         "user_name": "Foo",
         "session_length": 10
     },
-    "books": [ ]
+    "books": [
+        {
+            "title": "Eleanor Roosevelt",
+            "cards": [
+                {
+                    "level": 2,
+                    "date": "2020-12-21",
+                    "quote": "The future belongs to those who believe in the beauty of their dreams.",
+                    "type": "quote"
+                }
+            ]
+        }
+    ]
 }

@@ -20,7 +20,7 @@ class PracticeView(tk.Frame):
         self.card_front, self.card_back = first_card
         self.lbl_quote.config(text=self.card_front)
         self.btn_fail.config(state=tk.DISABLED)
-        self.btn_pass.config(text='N')
+        self.btn_pass.config(text='Next')
         self.lbl_title.config(text=self.controller.get_cur_title())
         self.reset_progress_bar()
         self.state = 'front'
@@ -34,12 +34,12 @@ class PracticeView(tk.Frame):
     def change_sate(self):
         if self.state == 'front':
             self.btn_fail.config(state=tk.NORMAL)
-            self.btn_pass.config(text='P')
+            self.btn_pass.config(text='Pass')
             self.lbl_quote.config(text=self.card_back)
             self.state = 'back'
         elif self.state == 'back':
             self.btn_fail.config(state=tk.DISABLED)
-            self.btn_pass.config(text='N')
+            self.btn_pass.config(text='Next')
             self.state = 'front'
             next_card = self.controller.next_card()
             if next_card == None:
@@ -81,8 +81,8 @@ class PracticeView(tk.Frame):
         btn_home.pack(side="left", padx=10)
         self.lbl_progress.pack(side="right", padx=15)
 
-        self.btn_fail = tk.Button(frame_buttons, state='disabled', text="F", command=lambda: self.btn_fail_pressed())
-        self.btn_pass = tk.Button(frame_buttons, text='N', command=lambda: self.btn_pass_pressed())
+        self.btn_fail = tk.Button(frame_buttons, state='disabled', text="Fail", command=lambda: self.btn_fail_pressed())
+        self.btn_pass = tk.Button(frame_buttons, text='Next', command=lambda: self.btn_pass_pressed())
 
         self.btn_fail.pack(side='left', fill='x', pady=10, padx=10, expand=True)
         self.btn_pass.pack(side='left', fill='x', pady=10, padx=10, expand=True)
