@@ -18,7 +18,7 @@ class PracticeView(tk.Frame):
         if first_card == None:
             self.close()
         self.card_front, self.card_back = first_card
-        self.lbl_quote.config(text=self.card_front)
+        self.lbl_quote.config(text=self.card_front, font=tkFont.Font(size=20))
         self.btn_fail.config(state=tk.DISABLED)
         self.btn_pass.config(text='Flip')
         self.lbl_title.config(text=self.controller.get_cur_title())
@@ -35,7 +35,8 @@ class PracticeView(tk.Frame):
         if self.state == 'front':
             self.btn_fail.config(state=tk.NORMAL)
             self.btn_pass.config(text='Pass')
-            self.lbl_quote.config(text=self.card_back)
+            font = tkFont.Font(size=20) if len(self.card_back) < 225 else tkFont.Font(size=14)
+            self.lbl_quote.config(text=self.card_back, font=font)
             self.state = 'back'
         elif self.state == 'back':
             self.btn_fail.config(state=tk.DISABLED)
@@ -46,7 +47,7 @@ class PracticeView(tk.Frame):
                 self.close()
             else:
                 self.card_front, self.card_back = next_card
-                self.lbl_quote.config(text=self.card_front)
+                self.lbl_quote.config(text=self.card_front, font=tkFont.Font(size=20))
         
         self.reset_progress_bar()
         self.lbl_title.config(text=self.controller.get_cur_title())
