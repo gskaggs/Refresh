@@ -1,5 +1,6 @@
 from datetime import date, timedelta
 import random
+import numpy as np
 
 M = 2 ** 64
 P = 53
@@ -67,8 +68,9 @@ def get_front_back(card):
 def update_card(card, successful):
     level_to_days = {1: 1, 2: 3, 3: 7, 4: 14, 5: 21}
     level = card['level']
+    days = max(1, level_to_days[level] + int(round(np.random.normal(0, .75))))
     if successful:
-        card['date'] = date.today() + timedelta(days=level_to_days[level])
+        card['date'] = date.today() + timedelta(days=days)
         card['level'] = min(card['level'] + 1, 5)
     else:
         card['level'] = 1
