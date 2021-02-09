@@ -66,12 +66,12 @@ def get_front_back(card):
 
 
 def update_card(card, successful):
-    level_to_days = {1: 1, 2: 3, 3: 7, 4: 14, 5: 21}
+    level_to_days = {1: 1, 2: 3, 3: 7, 4: 14, 5: 21, 6: 42, 7: 64}
     level = card['level']
-    days = max(1, level_to_days[level] + int(round(np.random.normal(0, .75))))
+    days = max(1, level_to_days[level] + int(round(np.random.normal(0, level * .5))))
     if successful:
         card['date'] = date.today() + timedelta(days=days)
-        card['level'] = min(card['level'] + 1, 5)
+        card['level'] = min(card['level'] + 1, 7)
     else:
         card['level'] = 1
 

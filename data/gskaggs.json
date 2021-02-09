@@ -5,317 +5,69 @@
     },
     "books": [
         {
-            "title": "Predictably Wrong, Eliezer Yudkowsky\n",
-            "cards": [
-                {
-                    "level": 5,
-                    "date": "2021-02-02",
-                    "front": "deontological",
-                    "back": "the study of the nature of duty and obligation",
-                    "type": "flash"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-02-16",
-                    "front": "absurdity bias",
-                    "back": "events that have never happened are not recalled, and hence deemed to have probability zero.\nWhen no flooding has recently occurred (and yet the probabilities are still fairly calculable), people refuse to buy flood insurance even when it is heavily subsidized and priced far below an actuarially fair value.",
-                    "type": "flash"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-02-17",
-                    "front": "The conjunction fallacy",
-                    "back": "- when humans assign a higher probability to a proposition of the form \u201cA and B\u201d than to one of the propositions \u201cA\u201d or \u201cB\u201d in isolation\n- \u201csubstitute judgment of representativeness for judgment of probability.\n- \u201cEx. End diplomatic relations w/ USSR +- invasion of Poland.",
-                    "type": "flash"
-                }
-            ]
-        },
-        {
-            "title": "HPMOR, EY",
-            "cards": [
-                {
-                    "level": 5,
-                    "date": "2021-02-08",
-                    "front": "Fundamental attribution error (aka Correspondance bias)",
-                    "back": "When evaluating other people, we tend to explain their behaviour as fundamental personality traits instead of consequences of their recent experiences (eg someone just yelled at them). This is because we don't see what they've been through before encountering them",
-                    "type": "flash"
-                }
-            ]
-        },
-        {
-            "title": "Lao Tzu",
-            "cards": [
-                {
-                    "level": 5,
-                    "date": "2021-02-16",
-                    "quote": "Nature does not hurry, yet everything is accomplished.",
-                    "type": "quote"
-                }
-            ]
-        },
-        {
-            "title": "Grapes of Wrath, Steinbeck",
-            "cards": [
-                {
-                    "level": 5,
-                    "date": "2021-02-19",
-                    "quote": "For anybody else it was a mistake, but if you think it was a sin-then it's a sin. A fella builds his own sins right up from the groun.",
-                    "type": "quote"
-                }
-            ]
-        },
-        {
-            "title": "Mysterious Answers, EY",
-            "cards": [
-                {
-                    "level": 5,
-                    "date": "2021-02-08",
-                    "front": "Semantic stopsign",
-                    "back": "Not a propositional assertion, so much as a cognitive traffic signal: do not think past this point.",
-                    "type": "flash"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-02-08",
-                    "front": "Confirmation bias",
-                    "back": "The tendency to search for, interpret, favor, and recall information in a way that confirms or supports one's prior beliefs or values",
-                    "type": "flash"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-02-08",
-                    "front": "Mysterious answer",
-                    "back": "A blanket answer to a hard question which is a curiosity-stopper instead of an anticipation-controller. Even after the answer is given the question still remains a mystery.",
-                    "type": "flash"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-02-08",
-                    "front": "Publication bias",
-                    "back": "the outcome of an experiment or research study influences the decision whether to publish or otherwise distribute it.",
-                    "type": "flash"
-                }
-            ]
-        },
-        {
-            "title": "Wikipedia",
-            "cards": [
-                {
-                    "level": 4,
-                    "date": "2021-01-29",
-                    "front": "p-value",
-                    "back": "the probability of obtaining test results at least as extreme as the results actually observed, under the assumption that the null hypothesis is correct.",
-                    "type": "flash"
-                }
-            ]
-        },
-        {
             "title": "Mysterious Questions, EY",
             "cards": [
                 {
                     "level": 5,
-                    "date": "2021-02-08",
+                    "date": "2021-02-28",
                     "quote": "When you contain the source of a thought, it becomes truly a part of you and grows along with you.",
                     "type": "quote"
                 }
             ]
         },
         {
-            "title": "Wikipedia",
-            "cards": [
-                {
-                    "level": 2,
-                    "date": "2021-01-28",
-                    "front": "Hermitian matrix",
-                    "back": "a complex square matrix that is equal to its own conjugate transpose",
-                    "type": "flash"
-                },
-                {
-                    "level": 2,
-                    "date": "2021-01-28",
-                    "front": "Unitary matrix",
-                    "back": "its conjugate transpose U* is also its inverse",
-                    "type": "flash"
-                }
-            ]
-        },
-        {
-            "title": "HPMOR, EY",
-            "cards": [
-                {
-                    "level": 5,
-                    "date": "2021-02-02",
-                    "quote": "Hesitation is always easy, but rarely useful.",
-                    "type": "quote"
-                }
-            ]
-        },
-        {
-            "title": "Phil Karlton",
-            "cards": [
-                {
-                    "level": 5,
-                    "date": "2021-02-13",
-                    "quote": "There are 2 hard problems in computer science: cache invalidation, naming things, and off-by-1 errors.",
-                    "type": "quote"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-02-13",
-                    "quote": "There are only two hard things in Computer Science: cache invalidation and naming things.",
-                    "type": "quote"
-                }
-            ]
-        },
-        {
-            "title": "HPMOR, EY",
-            "cards": [
-                {
-                    "level": 5,
-                    "date": "2021-01-29",
-                    "quote": "Your strength as a rationalist is your ability to be more confused by fiction than by reality.",
-                    "type": "quote"
-                }
-            ]
-        },
-        {
-            "title": "Fake Beliefs, EY",
-            "cards": [
-                {
-                    "level": 5,
-                    "date": "2021-01-29",
-                    "front": "Belief in belief",
-                    "back": "Claimant anticipates as if their belief is false, but makes excuses as if they believed in the belief.\nEx. Invisible dragon in the garage, little kids and Santa Clause, Draco and Pureblood eugenics.",
-                    "type": "flash"
-                }
-            ]
-        },
-        {
-            "title": "Stats - De Veaux",
-            "cards": [
-                {
-                    "level": 2,
-                    "date": "2021-01-28",
-                    "front": "Kendall\u2019s tau",
-                    "back": "Measures monotonicity directly. For each pair of points in a scatterplot, it records only whether the slope of a line between those two points is positive,  negative, or zero. Tau is the difference of the number of positive slopes and the number of negative slopes divided by the total number of slopes between pairs\n\n ",
-                    "type": "flash"
-                },
-                {
-                    "level": 3,
-                    "date": "2021-01-30",
-                    "front": "Correlation coefficient",
-                    "back": "r = sum(z_x * z_y) / (n - 1)",
-                    "type": "flash"
-                },
-                {
-                    "level": 3,
-                    "date": "2021-01-29",
-                    "front": "Spearman's rho",
-                    "back": "Correlation coefficient of the ranks of two variables\nSolves the outlier and the non-linear problem",
-                    "type": "flash"
-                }
-            ]
-        },
-        {
-            "title": "Wikipedia",
-            "cards": [
-                {
-                    "level": 5,
-                    "date": "2021-02-01",
-                    "front": "Monte Carlo methods",
-                    "back": "a broad class of computational algorithms that rely on repeated random sampling to obtain numerical results. The underlying concept is to use randomness to solve problems that might be deterministic in principle.",
-                    "type": "flash"
-                }
-            ]
-        },
-        {
-            "title": "Noticing Confusion, EY",
-            "cards": [
-                {
-                    "level": 5,
-                    "date": "2021-02-01",
-                    "front": "What is Evidence?",
-                    "back": "- For an event to be\u00a0evidence about\u00a0a target of inquiry, it has to happen\u00a0differently\u00a0in a way that\u2019s entangled with the\u00a0different\u00a0possible states of the target.\n- More technically, there has to be Shannon mutual information between the evidential event and the target of inquiry, relative to your current state of uncertainty about both of them.",
-                    "type": "flash"
-                }
-            ]
-        },
-        {
-            "title": "Odds and Ends, Weisberg",
-            "cards": [
-                {
-                    "level": 5,
-                    "date": "2021-02-08",
-                    "quote": "Deductive logic is the branch of logic that studies what follows with certainty. Inductive logic deals with uncertainty, things that only follow with high probability.",
-                    "type": "quote"
-                },
-                {
-                    "level": 4,
-                    "date": "2021-02-01",
-                    "front": "Valid",
-                    "back": "An argument such that the conclusion must be true if the premises are true",
-                    "type": "flash"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-02-08",
-                    "front": "Sound",
-                    "back": "Argument is valid and rests on true premises",
-                    "type": "flash"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-02-08",
-                    "front": "Common Types of Inductive Arguments",
-                    "back": "- Generalizing from observed instances\n- Use what we know about a general population to draw conclusions about particular instances\n- Inference to the best explanation is another common form of argument\n",
-                    "type": "flash"
-                }
-            ]
-        },
-        {
-            "title": "Eliezer Yudkowski",
-            "cards": [
-                {
-                    "level": 5,
-                    "date": "2021-02-16",
-                    "quote": "Harry sent his parents a glare. \"I am a conscientious objector to child conscription, on grounds that I should not have to suffer for a disintegrating school system's failure to provide teachers or study materials of even minimally adequate quality.\"",
-                    "type": "quote"
-                }
-            ]
-        },
-        {
-            "title": "Noticing Confusion, EY",
-            "cards": [
-                {
-                    "level": 5,
-                    "date": "2021-02-02",
-                    "front": "The effects of likelihood ratios on probability ratios",
-                    "back": "When we see evidence, hypotheses that assigned a higher likelihood to that evidence gain probability, at the expense of hypotheses that assigned a lower likelihood to the evidence.",
-                    "type": "flash"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-02-02",
-                    "front": "Truth bias",
-                    "back": "People are more likely to believe the truth then to express disbelief in a lie.",
-                    "type": "flash"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-02-02",
-                    "quote": "Absence of proof is not proof of absence.\nIn probability theory, absence of evidence is evidence of absence.",
-                    "type": "quote"
-                }
-            ]
-        },
-        {
-            "title": "Wikipedia",
+            "title": "Isaac Asimov",
             "cards": [
                 {
                     "level": 5,
                     "date": "2021-02-17",
-                    "front": "Simulated annealing",
-                    "back": "- a probabilistic technique for approximating the global optimum of a given function.\n- Name comes from annealing in metallurgy, a technique involving heating and controlled cooling of a material to increase the size of its crystals and reduce their defects.\n- Slow cooling = slow decrease in the probability of accepting worse solutions as the solution space is explored.",
+                    "front": "Asimov's 3 Laws",
+                    "back": "First Law\n- A robot may not injure a human being or, through inaction, allow a human being to come to harm.\nSecond Law\n- A robot must obey the orders given it by human beings except where such orders would conflict with the First Law.\nThird Law\n- A robot must protect its own existence as long as such protection does not conflict with the First or Second Law",
+                    "type": "flash"
+                }
+            ]
+        },
+        {
+            "title": "Stats",
+            "cards": [
+                {
+                    "level": 4,
+                    "date": "2021-02-16",
+                    "front": "Margin of Error",
+                    "back": "The maximum likely difference between the point estimate and the actual value",
+                    "type": "flash"
+                },
+                {
+                    "level": 4,
+                    "date": "2021-02-14",
+                    "front": "Confidence Level",
+                    "back": "The probability 1-alpha that is the proportion of time that the confidence interval actually does contain the population paramter, assuming that the estiamtion process is repeated a large number of times",
+                    "type": "flash"
+                },
+                {
+                    "level": 4,
+                    "date": "2021-02-12",
+                    "front": "Central Limit Theorem",
+                    "back": "If the sample size is large enough, the distribution of sample means can be approimated by a normal distribution.",
+                    "type": "flash"
+                },
+                {
+                    "level": 4,
+                    "date": "2021-02-12",
+                    "front": "Confidence Interval",
+                    "back": "A range of values used to estimate the true value of a population parameter",
+                    "type": "flash"
+                }
+            ]
+        },
+        {
+            "title": "Wikipedia",
+            "cards": [
+                {
+                    "level": 5,
+                    "date": "2021-02-24",
+                    "front": "Newcomb's paradox",
+                    "back": "Box A is clear, and always contains a visible $1,000.\nBox B is opaque, and its content has already been set by the predictor:\nIf the predictor has predicted the player will take both boxes A and B, then box B contains nothing.\nIf the predictor has predicted that the player will take only box B, then box B contains $1,000,000.",
                     "type": "flash"
                 }
             ]
@@ -333,73 +85,233 @@
             ]
         },
         {
-            "title": "P.C. Hodgell",
-            "cards": [
-                {
-                    "level": 5,
-                    "date": "2021-01-29",
-                    "quote": "That which can be destroyed by the truth should be.",
-                    "type": "quote"
-                }
-            ]
-        },
-        {
-            "title": "HPMOR, EY",
+            "title": "Wikipedia",
             "cards": [
                 {
                     "level": 4,
-                    "date": "2021-01-28",
-                    "quote": "Only a man exceedingly proud and vain would believe that his heir should be like himself, rather than like who he wished that he could be.\n",
+                    "date": "2021-02-11",
+                    "front": "Unitary matrix",
+                    "back": "its conjugate transpose U* is also its inverse",
+                    "type": "flash"
+                },
+                {
+                    "level": 4,
+                    "date": "2021-02-12",
+                    "front": "Hermitian matrix",
+                    "back": "a complex square matrix that is equal to its own conjugate transpose",
+                    "type": "flash"
+                }
+            ]
+        },
+        {
+            "title": "Predictably Wrong, E.Y.",
+            "cards": [
+                {
+                    "level": 5,
+                    "date": "2021-02-20",
+                    "front": "Instrumental Rationality",
+                    "back": "systematically achieving your values.",
+                    "type": "flash"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-22",
+                    "front": "Epistemic Rationality",
+                    "back": "systematically improving the accuracy of your beliefs.",
+                    "type": "flash"
+                }
+            ]
+        },
+        {
+            "title": "JFK",
+            "cards": [
+                {
+                    "level": 5,
+                    "date": "2021-02-19",
+                    "quote": "The hottest place in Hell is reserved for those who in time of crisis remain neutral.",
                     "type": "quote"
                 }
             ]
         },
         {
-            "title": "Wikipedia",
+            "title": "Eliezer Yudkowski",
             "cards": [
                 {
                     "level": 5,
-                    "date": "2021-02-05",
-                    "front": "Shannon information",
-                    "back": "I(x) = log(p(x))",
+                    "date": "2021-02-16",
+                    "quote": "Harry sent his parents a glare. \"I am a conscientious objector to child conscription, on grounds that I should not have to suffer for a disintegrating school system's failure to provide teachers or study materials of even minimally adequate quality.\"",
+                    "type": "quote"
+                }
+            ]
+        },
+        {
+            "title": "HPMOR, Eliezer Yudkowsky",
+            "cards": [
+                {
+                    "level": 5,
+                    "date": "2021-02-16",
+                    "quote": "I hope you don't mind if I test that - it's not that I don't believe you, but as the saying goes, 'Trust, but verify'.",
+                    "type": "quote"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-14",
+                    "quote": "If you can't criticise, you can't optimise.",
+                    "type": "quote"
+                }
+            ]
+        },
+        {
+            "title": "Odds and Ends, JW",
+            "cards": [
+                {
+                    "level": 5,
+                    "date": "2021-02-12",
+                    "front": "Gambler's Fallacy",
+                    "back": "Thinking you're due for a change in luck despite events being independent",
                     "type": "flash"
                 },
                 {
                     "level": 5,
-                    "date": "2021-02-01",
-                    "front": "Shannon entropy",
-                    "back": "H = E[ I(x) ]",
+                    "date": "2021-02-11",
+                    "front": "The Sure-thing Principle",
+                    "back": "If you would choose  X  over  Y  if you knew that  E  was true, and you\u2019d also choose  X  over  Y  if you knew  E  wasn\u2019t true, then you should choose  X  over  Y  when you don\u2019t know whether  E  is true or not",
+                    "type": "flash"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-12",
+                    "front": "Fair",
+                    "back": "Unbiased and Independent",
                     "type": "flash"
                 }
             ]
         },
         {
-            "title": "Wikipedia",
+            "title": "Predictably Wrong, Eliezer Yudkowsky",
             "cards": [
                 {
                     "level": 5,
-                    "date": "2021-02-01",
-                    "front": "Kullback-Leibler Divergence",
-                    "back": "- (also called relative entropy) \n- a measure of how one probability distribution is different from a second, reference probability distribution\n- Sum(P(x) * log (P(x) / Q(x)))\n- H(P, Q) - H(P)",
+                    "date": "2021-02-16",
+                    "front": "availability heuristic",
+                    "back": "judging the frequency or probability of an event by the ease with which examples of the event come to mind.",
                     "type": "flash"
                 },
                 {
                     "level": 5,
-                    "date": "2021-02-01",
-                    "front": "Mutual information",
-                    "back": "- A measure of the mutual dependence between two random variables.\n- I(X; Y) = D_KL(P_XY || P_X x P_Y)",
+                    "date": "2021-02-18",
+                    "front": "base rate neglect",
+                    "back": "grounding one\u2019s judgments in how well sets of characteristics feel like they fit together, and neglecting how common each characteristic is in the population at large.",
+                    "type": "flash"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-19",
+                    "front": "Extension neglect",
+                    "back": "type of cognitive bias which occurs when the sample size is ignored while evaluating a study in which the sample size is logically relevant.",
+                    "type": "flash"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-24",
+                    "front": "Scope Insensitivity",
+                    "back": "a cognitive bias that occurs when the valuation of a problem is not valued with a multiplicative relationship to its size; a particular kind of extension neglect.",
                     "type": "flash"
                 }
             ]
         },
         {
-            "title": "Wikipedia",
+            "title": "Stats",
+            "cards": [
+                {
+                    "level": 2,
+                    "date": "2021-02-09",
+                    "front": "Poisson Probability Model",
+                    "back": "- used to approximate a Binomial model when p is small and n is  large.\n- expresses the probability of a given number of events occurring in a fixed interval of time or space if these events occur with a known constant mean rate and independently of the time since the last event.\n- lambda = np\n- P(X = k) = (lambda ^ k ) * exp(-lambda) / k!",
+                    "type": "flash"
+                },
+                {
+                    "level": 2,
+                    "date": "2021-02-09",
+                    "front": "Exponential model ",
+                    "back": "- used to estimate the time between two random events that  occur following a Poisson probability model\n- P(X <= x) = lambda * e^(-lambda x)\n- mean is 1 / lambda\n",
+                    "type": "flash"
+                },
+                {
+                    "level": 2,
+                    "date": "2021-02-09",
+                    "front": "Geometric Probability Model",
+                    "back": "- Counts the # of Bernoulli trials until first success\n- P(X=x) = (q^x-1) * p",
+                    "type": "flash"
+                }
+            ]
+        },
+        {
+            "title": "Eleanor Roosevelt",
             "cards": [
                 {
                     "level": 5,
-                    "date": "2021-02-01",
-                    "front": "Newcomb's paradox",
-                    "back": "Box A is clear, and always contains a visible $1,000.\nBox B is opaque, and its content has already been set by the predictor:\nIf the predictor has predicted the player will take both boxes A and B, then box B contains nothing.\nIf the predictor has predicted that the player will take only box B, then box B contains $1,000,000.",
+                    "date": "2021-02-26",
+                    "quote": "The future belongs to those who believe in the beauty of their dreams.",
+                    "type": "quote"
+                }
+            ]
+        },
+        {
+            "title": "Noticing Confusion, EY",
+            "cards": [
+                {
+                    "level": 5,
+                    "date": "2021-02-26",
+                    "front": "Expecting short inferential distances",
+                    "back": "In our ancestral environment, you were unlikely to end up more than one inferential step away from anyone else. Anyone who says something with no obvious support is a liar or an idiot. Conversely, if you say something blatantly obvious and the other person doesn\u2019t see it, they\u2019re the idiot, or they\u2019re being deliberately obstinate to annoy you.",
+                    "type": "flash"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-26",
+                    "front": "Hindsight bias",
+                    "back": "- the I-knew-it-all-along phenomenon\n- Subjects who know the actual answer to a question assign much higher probabilities they \u201cwould have\u201d guessed for that answer, compared to subjects who must guess without knowing the answer.",
+                    "type": "flash"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-25",
+                    "front": "Illusion of transparency",
+                    "back": "- A cognitive bias in which you assume people will understand your attempts at communication (writing, speech, etc.) because you know what you're saying\n- Related to hindsight bias",
+                    "type": "flash"
+                }
+            ]
+        },
+        {
+            "title": "Mysterious Answers, EY",
+            "cards": [
+                {
+                    "level": 5,
+                    "date": "2021-03-02",
+                    "front": "Semantic stopsign",
+                    "back": "Not a propositional assertion, so much as a cognitive traffic signal: do not think past this point.",
+                    "type": "flash"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-03-01",
+                    "front": "Publication bias",
+                    "back": "the outcome of an experiment or research study influences the decision whether to publish or otherwise distribute it.",
+                    "type": "flash"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-03-02",
+                    "front": "Mysterious answer",
+                    "back": "A blanket answer to a hard question which is a curiosity-stopper instead of an anticipation-controller. Even after the answer is given the question still remains a mystery.",
+                    "type": "flash"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-03-01",
+                    "front": "Confirmation bias",
+                    "back": "The tendency to search for, interpret, favor, and recall information in a way that confirms or supports one's prior beliefs or values",
                     "type": "flash"
                 }
             ]
@@ -409,10 +321,68 @@
             "cards": [
                 {
                     "level": 5,
-                    "date": "2021-02-02",
-                    "front": "Conservation of Expected Evidence",
-                    "back": "- The expectation of the posterior probability, after viewing the evidence, must equal the prior probability.\n- P(H) = P(E) P(H|E) + P(~E) P(H|~E)\n- 0 = (P(H|E)-P(H))P(E) + (P(H|~E)-P(H))P(~E)",
+                    "date": "2021-02-22",
+                    "front": "What is Evidence?",
+                    "back": "- For an event to be\u00a0evidence about\u00a0a target of inquiry, it has to happen\u00a0differently\u00a0in a way that\u2019s entangled with the\u00a0different\u00a0possible states of the target.\n- More technically, there has to be Shannon mutual information between the evidential event and the target of inquiry, relative to your current state of uncertainty about both of them.",
                     "type": "flash"
+                }
+            ]
+        },
+        {
+            "title": "Wikipedia",
+            "cards": [
+                {
+                    "level": 5,
+                    "date": "2021-02-22",
+                    "front": "Cross Entropy",
+                    "back": "- measures the average number of bits needed to identify an event drawn from the set if a coding scheme used for the set is optimized for an estimated probability distribution q, rather than the true distribution p.\n- H(p, q) = - E_p [log q]",
+                    "type": "flash"
+                }
+            ]
+        },
+        {
+            "title": "Master Oogway",
+            "cards": [
+                {
+                    "level": 5,
+                    "date": "2021-02-27",
+                    "quote": "Yesterday is history,\ntomorrow is a mystery,\nand today is a gift...\nthat's why they call it the present",
+                    "type": "quote"
+                }
+            ]
+        },
+        {
+            "title": "Stats - Veux",
+            "cards": [
+                {
+                    "level": 4,
+                    "date": "2021-02-10",
+                    "front": "Least squares line in 2D",
+                    "back": "m = r * sigma_y / sigma_x\nb = mu_y - m * mu_x",
+                    "type": "flash"
+                }
+            ]
+        },
+        {
+            "title": "The Puzzle of Motivation - Dan Pink",
+            "cards": [
+                {
+                    "level": 5,
+                    "date": "2021-03-02",
+                    "front": "3 Intrinsic Motivators",
+                    "back": "Autonomy\nPurpose \nMastery",
+                    "type": "flash"
+                }
+            ]
+        },
+        {
+            "title": "Phillip K. Dick",
+            "cards": [
+                {
+                    "level": 5,
+                    "date": "2021-02-17",
+                    "quote": "Reality is that which, when you stop believing in it, doesn't go away.",
+                    "type": "quote"
                 }
             ]
         },
@@ -428,28 +398,203 @@
             ]
         },
         {
-            "title": "Odds and Ends, JW",
+            "title": "Stats - Veaux",
             "cards": [
                 {
                     "level": 4,
-                    "date": "2021-01-28",
-                    "front": "Gambler's Fallacy",
-                    "back": "Thinking you're due for a change in luck despite events being independent",
+                    "date": "2021-02-11",
+                    "front": "Standard deviation of a binomial distribution",
+                    "back": "s = sqrt( np(1-p) )",
                     "type": "flash"
                 },
                 {
                     "level": 4,
-                    "date": "2021-01-28",
-                    "front": "The Sure-thing Principle",
-                    "back": "If you would choose  X  over  Y  if you knew that  E  was true, and you\u2019d also choose  X  over  Y  if you knew  E  wasn\u2019t true, then you should choose  X  over  Y  when you don\u2019t know whether  E  is true or not",
+                    "date": "2021-02-09",
+                    "front": "Coefficient of Determination",
+                    "back": "The percentage of variation in y which is described by the line.\nR^2 = 1 - (SSE_line / SSE_y)",
+                    "type": "flash"
+                }
+            ]
+        },
+        {
+            "title": "Stats - De Veaux",
+            "cards": [
+                {
+                    "level": 5,
+                    "date": "2021-02-19",
+                    "front": "Spearman's rho",
+                    "back": "Correlation coefficient of the ranks of two variables\nSolves the outlier and the non-linear problem",
                     "type": "flash"
                 },
                 {
                     "level": 4,
-                    "date": "2021-01-28",
-                    "front": "Fair",
-                    "back": "Unbiased and Independent",
+                    "date": "2021-02-10",
+                    "front": "Correlation coefficient",
+                    "back": "r = sum(z_x * z_y) / (n - 1)",
                     "type": "flash"
+                },
+                {
+                    "level": 4,
+                    "date": "2021-02-11",
+                    "front": "Kendall\u2019s tau",
+                    "back": "Measures monotonicity directly. For each pair of points in a scatterplot, it records only whether the slope of a line between those two points is positive,  negative, or zero. Tau is the difference of the number of positive slopes and the number of negative slopes divided by the total number of slopes between pairs\n\n ",
+                    "type": "flash"
+                }
+            ]
+        },
+        {
+            "title": "HPMOR, EY",
+            "cards": [
+                {
+                    "level": 5,
+                    "date": "2021-03-01",
+                    "front": "Fundamental attribution error (aka Correspondance bias)",
+                    "back": "When evaluating other people, we tend to explain their behaviour as fundamental personality traits instead of consequences of their recent experiences (eg someone just yelled at them). This is because we don't see what they've been through before encountering them",
+                    "type": "flash"
+                }
+            ]
+        },
+        {
+            "title": "Change Your Mind, EY",
+            "cards": [
+                {
+                    "level": 5,
+                    "date": "2021-02-08",
+                    "front": "Tsuyoku naritai!",
+                    "back": "I'll always run as fast as I can",
+                    "type": "flash"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-08",
+                    "front": "2 Ways to Questions with the False Dilemma Fallacy",
+                    "back": "- If I saw that there was a superior alternative to my current policy, would I be glad in the depths of my heart, or would I feel a tiny flash of reluctance before I let go?\n- Did I spend five minutes with my eyes closed, brainstorming wild and creative options, trying to think of a better alternative?",
+                    "type": "flash"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-08",
+                    "front": "Fallacy of the Grey",
+                    "back": "Because nothing's black and white, there exist only equally grey things",
+                    "type": "flash"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-08",
+                    "front": "Humility",
+                    "back": "- To take specific actions in anticipation of your own errors.\n- To confess your fallibility and then do nothing about it is not humble; it is boasting of your modesty.\u201d\n",
+                    "type": "flash"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-08",
+                    "front": "Disconfirmation bias",
+                    "back": "the tendency for people to extend critical scrutiny to information which contradicts their prior beliefs and accept uncritically information that is congruent with their prior beliefs.",
+                    "type": "flash"
+                }
+            ]
+        },
+        {
+            "title": "Odds and Ends, Weisberg",
+            "cards": [
+                {
+                    "level": 5,
+                    "date": "2021-02-17",
+                    "front": "Valid",
+                    "back": "An argument such that the conclusion must be true if the premises are true",
+                    "type": "flash"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-08",
+                    "front": "Sound",
+                    "back": "Argument is valid and rests on true premises",
+                    "type": "flash"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-08",
+                    "quote": "Deductive logic is the branch of logic that studies what follows with certainty. Inductive logic deals with uncertainty, things that only follow with high probability.",
+                    "type": "quote"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-08",
+                    "front": "Common Types of Inductive Arguments",
+                    "back": "- Generalizing from observed instances\n- Use what we know about a general population to draw conclusions about particular instances\n- Inference to the best explanation is another common form of argument\n",
+                    "type": "flash"
+                }
+            ]
+        },
+        {
+            "title": "Harry Potter, EY",
+            "cards": [
+                {
+                    "level": 5,
+                    "date": "2021-02-15",
+                    "front": "planning fallacy",
+                    "back": "a phenomenon in which predictions about how much time will be needed to complete a future task display an optimism bias and underestimate the time needed.",
+                    "type": "flash"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-16",
+                    "front": "faux pas",
+                    "back": "- an embarrassing or tactless act or remark in a social situation.\n- French, literally \u2018false step\u2019.",
+                    "type": "flash"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-24",
+                    "quote": "We become what we are meant to be by following our desires wherever they lead. That is the insight of Salazar.",
+                    "type": "quote"
+                }
+            ]
+        },
+        {
+            "title": "Wikipedia",
+            "cards": [
+                {
+                    "level": 5,
+                    "date": "2021-02-24",
+                    "front": "Kullback-Leibler Divergence",
+                    "back": "- (also called relative entropy) \n- a measure of how one probability distribution is different from a second, reference probability distribution\n- Sum(P(x) * log (P(x) / Q(x)))\n- H(P, Q) - H(P)",
+                    "type": "flash"
+                },
+                {
+                    "level": 4,
+                    "date": "2021-02-13",
+                    "front": "Mutual information",
+                    "back": "- A measure of the mutual dependence between two random variables.\n- I(X; Y) = D_KL(P_XY || P_X x P_Y)",
+                    "type": "flash"
+                }
+            ]
+        },
+        {
+            "title": "Phil Karlton",
+            "cards": [
+                {
+                    "level": 5,
+                    "date": "2021-02-13",
+                    "quote": "There are only two hard things in Computer Science: cache invalidation and naming things.",
+                    "type": "quote"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-13",
+                    "quote": "There are 2 hard problems in computer science: cache invalidation, naming things, and off-by-1 errors.",
+                    "type": "quote"
+                }
+            ]
+        },
+        {
+            "title": "Friedrich Nietzsche",
+            "cards": [
+                {
+                    "level": 5,
+                    "date": "2021-02-16",
+                    "quote": "There is more wisdom in your body than in your deepest philosophy.",
+                    "type": "quote"
                 }
             ]
         },
@@ -473,97 +618,13 @@
             ]
         },
         {
-            "title": "Odds and Ends, JW",
-            "cards": [
-                {
-                    "level": 4,
-                    "date": "2021-01-29",
-                    "front": "68-95-99 Rule",
-                    "back": "If X is distributed normally, then:\n- 68% of time within \u03bc\u00b1\u03c3\n- 95% of time within \u03bc\u00b12\u03c3\n- 99% of time within \u03bc\u00b13\u03c3",
-                    "type": "flash"
-                }
-            ]
-        },
-        {
-            "title": "Noticing Confusion, EY",
+            "title": "Wikipedia",
             "cards": [
                 {
                     "level": 5,
-                    "date": "2021-02-05",
-                    "front": "Hindsight bias",
-                    "back": "- the I-knew-it-all-along phenomenon\n- Subjects who know the actual answer to a question assign much higher probabilities they \u201cwould have\u201d guessed for that answer, compared to subjects who must guess without knowing the answer.",
-                    "type": "flash"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-02-05",
-                    "front": "Illusion of transparency",
-                    "back": "- A cognitive bias in which you assume people will understand your attempts at communication (writing, speech, etc.) because you know what you're saying\n- Related to hindsight bias",
-                    "type": "flash"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-02-05",
-                    "front": "Expecting short inferential distances",
-                    "back": "In our ancestral environment, you were unlikely to end up more than one inferential step away from anyone else. Anyone who says something with no obvious support is a liar or an idiot. Conversely, if you say something blatantly obvious and the other person doesn\u2019t see it, they\u2019re the idiot, or they\u2019re being deliberately obstinate to annoy you.",
-                    "type": "flash"
-                }
-            ]
-        },
-        {
-            "title": "Predictably Wrong, Eliezer Yudkowsky",
-            "cards": [
-                {
-                    "level": 5,
-                    "date": "2021-02-16",
-                    "front": "availability heuristic",
-                    "back": "judging the frequency or probability of an event by the ease with which examples of the event come to mind.",
-                    "type": "flash"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-02-02",
-                    "front": "Scope Insensitivity",
-                    "back": "a cognitive bias that occurs when the valuation of a problem is not valued with a multiplicative relationship to its size; a particular kind of extension neglect.",
-                    "type": "flash"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-01-29",
-                    "front": "Extension neglect",
-                    "back": "type of cognitive bias which occurs when the sample size is ignored while evaluating a study in which the sample size is logically relevant.",
-                    "type": "flash"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-02-18",
-                    "front": "base rate neglect",
-                    "back": "grounding one\u2019s judgments in how well sets of characteristics feel like they fit together, and neglecting how common each characteristic is in the population at large.",
-                    "type": "flash"
-                }
-            ]
-        },
-        {
-            "title": "Harry Potter, EY",
-            "cards": [
-                {
-                    "level": 5,
-                    "date": "2021-02-15",
-                    "front": "planning fallacy",
-                    "back": "a phenomenon in which predictions about how much time will be needed to complete a future task display an optimism bias and underestimate the time needed.",
-                    "type": "flash"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-02-02",
-                    "quote": "We become what we are meant to be by following our desires wherever they lead. That is the insight of Salazar.",
-                    "type": "quote"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-02-16",
-                    "front": "faux pas",
-                    "back": "- an embarrassing or tactless act or remark in a social situation.\n- French, literally \u2018false step\u2019.",
+                    "date": "2021-02-17",
+                    "front": "Simulated annealing",
+                    "back": "- a probabilistic technique for approximating the global optimum of a given function.\n- Name comes from annealing in metallurgy, a technique involving heating and controlled cooling of a material to increase the size of its crystals and reduce their defects.\n- Slow cooling = slow decrease in the probability of accepting worse solutions as the solution space is explored.",
                     "type": "flash"
                 }
             ]
@@ -581,65 +642,14 @@
             ]
         },
         {
-            "title": "JFK",
+            "title": "Khan Academy",
             "cards": [
                 {
                     "level": 5,
-                    "date": "2021-01-29",
-                    "quote": "The hottest place in Hell is reserved for those who in time of crisis remain neutral.",
-                    "type": "quote"
-                }
-            ]
-        },
-        {
-            "title": "Stuart Russel",
-            "cards": [
-                {
-                    "level": 5,
-                    "date": "2021-02-16",
-                    "front": "You can't get the coffee if you're dead",
-                    "back": "description of why almost any agent goal implies an instrumental strategy of surviving / not being shut down",
+                    "date": "2021-02-15",
+                    "front": "Confidence interval",
+                    "back": "the largest p-value we accept before rejecting the null hypothesis.",
                     "type": "flash"
-                }
-            ]
-        },
-        {
-            "title": "Friedrich Nietzsche",
-            "cards": [
-                {
-                    "level": 5,
-                    "date": "2021-02-16",
-                    "quote": "There is more wisdom in your body than in your deepest philosophy.",
-                    "type": "quote"
-                }
-            ]
-        },
-        {
-            "title": "Stats - Veux",
-            "cards": [
-                {
-                    "level": 2,
-                    "date": "2021-01-28",
-                    "front": "Least squares line in 2D",
-                    "back": "m = r * sigma_y / sigma_x\nb = mu_y - m * mu_x",
-                    "type": "flash"
-                }
-            ]
-        },
-        {
-            "title": "HPMOR, Eliezer Yudkowsky",
-            "cards": [
-                {
-                    "level": 5,
-                    "date": "2021-02-16",
-                    "quote": "I hope you don't mind if I test that - it's not that I don't believe you, but as the saying goes, 'Trust, but verify'.",
-                    "type": "quote"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-02-14",
-                    "quote": "If you can't criticise, you can't optimise.",
-                    "type": "quote"
                 }
             ]
         },
@@ -648,147 +658,62 @@
             "cards": [
                 {
                     "level": 5,
-                    "date": "2021-02-02",
-                    "front": "Positive leverage",
-                    "back": "when you can provide something that your counterpart desires",
-                    "type": "flash"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-01-29",
-                    "quote": "Assumptions blind, hypotheses guide.",
-                    "type": "quote"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-02-02",
-                    "note": "Your mindset should be that of discovery. Learn as much about the situation as possible",
-                    "type": "note"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-02-02",
-                    "note": "In general, *that's right* is what you're looking for. It signals your counterpart believes they've come up with the solution themselves. Alternatively, *you're right* is bad and often dismissive.",
-                    "type": "note"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-01-28",
-                    "front": "Blackswan events",
-                    "back": "Sudden surprising information which changes the balance of leverage in a negotiation",
-                    "type": "flash"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-02-02",
+                    "date": "2021-02-22",
                     "front": "The three voices you should use when negotiating:",
                     "back": "The FM DJ voice: a self-assured voice of calm and reason, use it calm down your counterpart\nA positive playful voice: Use most of the time, encourages positivity and cooperation\nAn assertive dominant voice: Use with caution",
                     "type": "flash"
                 },
                 {
                     "level": 5,
-                    "date": "2021-01-29",
-                    "front": "Mirroring",
-                    "back": "the concept of \"birds of a feather flock together.\" You send subtle signals that you're similar to your counterpart and should be bonding with. Seen often body language. Vos' recommendation: Repeat the last three words of what the person just said",
-                    "type": "flash"
+                    "date": "2021-02-22",
+                    "note": "In a job interview or salary negotiation, ask \"what does it take to be successful here.\" That'll give the boss a personal stake in your success. You've just created an unofficial mentor",
+                    "type": "note"
                 },
                 {
                     "level": 5,
-                    "date": "2021-01-29",
-                    "front": "Accusation audit",
-                    "back": "identifying all the reaso's you counterpart might be angry with you.",
-                    "type": "flash"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-02-02",
-                    "front": "Normative leverage",
-                    "back": "when you find inconsistencies in your opponents words and actions. Nobody likes to be a hypocrite find out what your counterparts usual behavior.",
-                    "type": "flash"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-02-02",
-                    "front": "Negative leverage",
-                    "back": "When you control something your counterpart wishes to avoid",
-                    "type": "flash"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-01-29",
-                    "front": "Analysts",
-                    "back": " super high trait C. They prepare a lot and are very calculating but beware that you're not offputting by how cold you are. Hypersensitive to reciprocity. Highly introverted. Use data and reason with them. Not quick to answer calibrated questions",
-                    "type": "flash"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-01-28",
+                    "date": "2021-02-17",
                     "note": "Use your opponent's deadlines against them. Cars salesman are more likely to give good deals at end of the month, businessmen at end of the financial quarter.",
                     "type": "note"
                 },
                 {
                     "level": 5,
-                    "date": "2021-02-02",
-                    "note": "Good negotiator know they need to be ready for surprises. Great negotiators use their skills to reveal the surprises they're certain exist.",
-                    "type": "note"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-01-29",
-                    "note": "The FBI developed their negotiation methods through iteration while having intense skin in the game.Harvard intellectuals did so through theory. Consequently, the FBI methods were superior.",
-                    "type": "note"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-02-02",
-                    "front": "Accomadators",
-                    "back": "high trait A. Very friendly. Be friendly with them. They might leave out objections or problem areas to avoid conflict",
-                    "type": "flash"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-01-29",
-                    "note": "Who has control in a negotiation the talker or the listener? The listener of course. That's because the talker is revealing information.",
-                    "type": "note"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-01-28",
-                    "front": "There are three types of negotiators:",
-                    "back": "- Assertives\n- Accommodaters\n- Analysts",
-                    "type": "flash"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-01-29",
+                    "date": "2021-02-17",
                     "front": "Labeling",
                     "back": "a type of tactical empathy; understanding your opponents emotions, articulating them, and respectfully verbalizing",
                     "type": "flash"
                 },
                 {
                     "level": 5,
-                    "date": "2021-01-29",
-                    "front": "Assertive",
-                    "back": "time is money. Perfection not necessary. Winning is the goal. Prioritization of respect. Must be heard. Tell not ask. Every silence is an opportunity to speak more. If you're dealing with this type, mirrors and calibrated questions are both excellent options. Look for the that's right",
+                    "date": "2021-02-22",
+                    "note": "Good negotiator know they need to be ready for surprises. Great negotiators use their skills to reveal the surprises they're certain exist.",
+                    "type": "note"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-22",
+                    "front": "Accomadators",
+                    "back": "high trait A. Very friendly. Be friendly with them. They might leave out objections or problem areas to avoid conflict",
                     "type": "flash"
                 },
                 {
                     "level": 5,
-                    "date": "2021-02-02",
-                    "note": "In a job interview or salary negotiation, ask \"what does it take to be successful here.\" That'll give the boss a personal stake in your success. You've just created an unofficial mentor",
-                    "type": "note"
+                    "date": "2021-02-18",
+                    "front": "Analysts",
+                    "back": " super high trait C. They prepare a lot and are very calculating but beware that you're not offputting by how cold you are. Hypersensitive to reciprocity. Highly introverted. Use data and reason with them. Not quick to answer calibrated questions",
+                    "type": "flash"
                 },
                 {
                     "level": 5,
-                    "date": "2021-02-02",
-                    "note": "Voss asks the same open ended questions until they get frustrated and give up",
-                    "type": "note"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-02-02",
+                    "date": "2021-02-24",
                     "note": "Avoid anchoring (giving the first offer) in monetary bargaining. But beware of sharks who will give a ludicrous anchor to throw you off.",
                     "type": "note"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-20",
+                    "front": "Accusation audit",
+                    "back": "identifying all the reaso's you counterpart might be angry with you.",
+                    "type": "flash"
                 },
                 {
                     "level": 5,
@@ -799,16 +724,101 @@
                 },
                 {
                     "level": 5,
-                    "date": "2021-02-02",
+                    "date": "2021-02-23",
+                    "front": "Positive leverage",
+                    "back": "when you can provide something that your counterpart desires",
+                    "type": "flash"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-23",
+                    "note": "Voss asks the same open ended questions until they get frustrated and give up",
+                    "type": "note"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-24",
                     "front": "Thesis",
                     "back": "That negotiation is an exercise in tactical empathy and honing those skills can improve your life.",
                     "type": "flash"
                 },
                 {
                     "level": 5,
-                    "date": "2021-01-29",
+                    "date": "2021-02-18",
+                    "note": "Who has control in a negotiation the talker or the listener? The listener of course. That's because the talker is revealing information.",
+                    "type": "note"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-20",
+                    "quote": "Assumptions blind, hypotheses guide.",
+                    "type": "quote"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-20",
+                    "front": "Assertive",
+                    "back": "time is money. Perfection not necessary. Winning is the goal. Prioritization of respect. Must be heard. Tell not ask. Every silence is an opportunity to speak more. If you're dealing with this type, mirrors and calibrated questions are both excellent options. Look for the that's right",
+                    "type": "flash"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-22",
+                    "note": "In general, *that's right* is what you're looking for. It signals your counterpart believes they've come up with the solution themselves. Alternatively, *you're right* is bad and often dismissive.",
+                    "type": "note"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-19",
+                    "note": "The FBI developed their negotiation methods through iteration while having intense skin in the game.Harvard intellectuals did so through theory. Consequently, the FBI methods were superior.",
+                    "type": "note"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-22",
+                    "front": "Negative leverage",
+                    "back": "When you control something your counterpart wishes to avoid",
+                    "type": "flash"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-20",
+                    "front": "Mirroring",
+                    "back": "the concept of \"birds of a feather flock together.\" You send subtle signals that you're similar to your counterpart and should be bonding with. Seen often body language. Vos' recommendation: Repeat the last three words of what the person just said",
+                    "type": "flash"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-22",
+                    "note": "Your mindset should be that of discovery. Learn as much about the situation as possible",
+                    "type": "note"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-20",
                     "front": "The 7/38/55 rule",
                     "back": "7% of what we communicate is done so through the verbal word, 35% is through the tone and intonation, and 55% is through our body language.",
+                    "type": "flash"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-24",
+                    "front": "Normative leverage",
+                    "back": "when you find inconsistencies in your opponents words and actions. Nobody likes to be a hypocrite find out what your counterparts usual behavior.",
+                    "type": "flash"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-18",
+                    "front": "There are three types of negotiators:",
+                    "back": "- Assertives\n- Accommodaters\n- Analysts",
+                    "type": "flash"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-17",
+                    "front": "Blackswan events",
+                    "back": "Sudden surprising information which changes the balance of leverage in a negotiation",
                     "type": "flash"
                 }
             ]
@@ -818,72 +828,125 @@
             "cards": [
                 {
                     "level": 5,
-                    "date": "2021-02-01",
-                    "front": "Cross Entropy",
-                    "back": "- measures the average number of bits needed to identify an event drawn from the set if a coding scheme used for the set is optimized for an estimated probability distribution q, rather than the true distribution p.\n- H(p, q) = - E_p [log q]",
+                    "date": "2021-02-25",
+                    "front": "Monte Carlo methods",
+                    "back": "a broad class of computational algorithms that rely on repeated random sampling to obtain numerical results. The underlying concept is to use randomness to solve problems that might be deterministic in principle.",
                     "type": "flash"
                 }
             ]
         },
         {
-            "title": "Change Your Mind, EY",
+            "title": "Fake Beliefs, EY",
             "cards": [
                 {
                     "level": 5,
-                    "date": "2021-02-08",
-                    "front": "2 Ways to Questions with the False Dilemma Fallacy",
-                    "back": "- If I saw that there was a superior alternative to my current policy, would I be glad in the depths of my heart, or would I feel a tiny flash of reluctance before I let go?\n- Did I spend five minutes with my eyes closed, brainstorming wild and creative options, trying to think of a better alternative?",
-                    "type": "flash"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-02-08",
-                    "front": "Humility",
-                    "back": "- To take specific actions in anticipation of your own errors.\n- To confess your fallibility and then do nothing about it is not humble; it is boasting of your modesty.\u201d\n",
-                    "type": "flash"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-02-08",
-                    "front": "Tsuyoku naritai!",
-                    "back": "I'll always run as fast as I can",
-                    "type": "flash"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-02-08",
-                    "front": "Disconfirmation bias",
-                    "back": "the tendency for people to extend critical scrutiny to information which contradicts their prior beliefs and accept uncritically information that is congruent with their prior beliefs.",
-                    "type": "flash"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-02-08",
-                    "front": "Fallacy of the Grey",
-                    "back": "Because nothing's black and white, there exist only equally grey things",
+                    "date": "2021-02-19",
+                    "front": "Belief in belief",
+                    "back": "Claimant anticipates as if their belief is false, but makes excuses as if they believed in the belief.\nEx. Invisible dragon in the garage, little kids and Santa Clause, Draco and Pureblood eugenics.",
                     "type": "flash"
                 }
             ]
         },
         {
-            "title": "Isaac Asimov",
+            "title": "Wikipedia",
             "cards": [
+                {
+                    "level": 5,
+                    "date": "2021-02-26",
+                    "front": "Shannon information",
+                    "back": "I(x) = log(p(x))",
+                    "type": "flash"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-24",
+                    "front": "Shannon entropy",
+                    "back": "H = E[ I(x) ]",
+                    "type": "flash"
+                }
+            ]
+        },
+        {
+            "title": "HPMOR, EY",
+            "cards": [
+                {
+                    "level": 5,
+                    "date": "2021-02-11",
+                    "quote": "Only a man exceedingly proud and vain would believe that his heir should be like himself, rather than like who he wished that he could be.\n",
+                    "type": "quote"
+                }
+            ]
+        },
+        {
+            "title": "Noticing Confusion, EY",
+            "cards": [
+                {
+                    "level": 5,
+                    "date": "2021-02-23",
+                    "front": "Truth bias",
+                    "back": "People are more likely to believe the truth then to express disbelief in a lie.",
+                    "type": "flash"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-23",
+                    "quote": "Absence of proof is not proof of absence.\nIn probability theory, absence of evidence is evidence of absence.",
+                    "type": "quote"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-24",
+                    "front": "The effects of likelihood ratios on probability ratios",
+                    "back": "When we see evidence, hypotheses that assigned a higher likelihood to that evidence gain probability, at the expense of hypotheses that assigned a lower likelihood to the evidence.",
+                    "type": "flash"
+                }
+            ]
+        },
+        {
+            "title": "Predictably Wrong, Eliezer Yudkowsky\n",
+            "cards": [
+                {
+                    "level": 5,
+                    "date": "2021-02-22",
+                    "front": "deontological",
+                    "back": "the study of the nature of duty and obligation",
+                    "type": "flash"
+                },
                 {
                     "level": 5,
                     "date": "2021-02-17",
-                    "front": "Asimov's 3 Laws",
-                    "back": "First Law\n- A robot may not injure a human being or, through inaction, allow a human being to come to harm.\nSecond Law\n- A robot must obey the orders given it by human beings except where such orders would conflict with the First Law.\nThird Law\n- A robot must protect its own existence as long as such protection does not conflict with the First or Second Law",
+                    "front": "The conjunction fallacy",
+                    "back": "- when humans assign a higher probability to a proposition of the form \u201cA and B\u201d than to one of the propositions \u201cA\u201d or \u201cB\u201d in isolation\n- \u201csubstitute judgment of representativeness for judgment of probability.\n- \u201cEx. End diplomatic relations w/ USSR +- invasion of Poland.",
+                    "type": "flash"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-16",
+                    "front": "absurdity bias",
+                    "back": "events that have never happened are not recalled, and hence deemed to have probability zero.\nWhen no flooding has recently occurred (and yet the probabilities are still fairly calculable), people refuse to buy flood insurance even when it is heavily subsidized and priced far below an actuarially fair value.",
                     "type": "flash"
                 }
             ]
         },
         {
-            "title": "Master Oogway",
+            "title": "Odds and Ends, JW",
             "cards": [
                 {
                     "level": 5,
-                    "date": "2021-02-05",
-                    "quote": "Yesterday is history,\ntomorrow is a mystery,\nand today is a gift...\nthat's why they call it the present",
+                    "date": "2021-02-12",
+                    "front": "68-95-99 Rule",
+                    "back": "If X is distributed normally, then:\n- 68% of time within \u03bc\u00b1\u03c3\n- 95% of time within \u03bc\u00b12\u03c3\n- 99% of time within \u03bc\u00b13\u03c3",
+                    "type": "flash"
+                }
+            ]
+        },
+        {
+            "title": "HPMOR, EY",
+            "cards": [
+                {
+                    "level": 5,
+                    "date": "2021-02-18",
+                    "quote": "Your strength as a rationalist is your ability to be more confused by fiction than by reality.",
                     "type": "quote"
                 }
             ]
@@ -900,88 +963,57 @@
             ]
         },
         {
-            "title": "The Puzzle of Motivation - Dan Pink",
-            "cards": [
-                {
-                    "level": 5,
-                    "date": "2021-02-08",
-                    "front": "3 Intrinsic Motivators",
-                    "back": "Autonomy\nPurpose \nMastery",
-                    "type": "flash"
-                }
-            ]
-        },
-        {
-            "title": "Predictably Wrong, E.Y.",
-            "cards": [
-                {
-                    "level": 5,
-                    "date": "2021-01-29",
-                    "front": "Instrumental Rationality",
-                    "back": "systematically achieving your values.",
-                    "type": "flash"
-                },
-                {
-                    "level": 5,
-                    "date": "2021-02-01",
-                    "front": "Epistemic Rationality",
-                    "back": "systematically improving the accuracy of your beliefs.",
-                    "type": "flash"
-                }
-            ]
-        },
-        {
             "title": "Influence: The Psychology of Persuasion - Robert Cialdini",
             "cards": [
                 {
-                    "level": 3,
-                    "date": "2021-01-28",
-                    "quote": "If you have a client on the fence about a purchase, get that person to think that they have some competition",
-                    "type": "quote"
-                },
-                {
-                    "level": 3,
-                    "date": "2021-01-28",
-                    "quote": "Scarcity  <<<  drop from abundance to scarcity drop from abundance to scarcity  <<<   caused by social demand for that item ",
-                    "type": "quote"
-                },
-                {
-                    "level": 3,
-                    "date": "2021-01-28",
+                    "level": 5,
+                    "date": "2021-02-18",
                     "quote": "It is the obligation to receive which makes the rule [of reciprocation] so easy to exploit.",
                     "type": "quote"
                 },
                 {
-                    "level": 3,
-                    "date": "2021-01-28",
-                    "front": "The worst conditions for social bias to occur",
-                    "back": "(1) uncertainty and (2) similarity to the group",
-                    "type": "flash"
-                },
-                {
-                    "level": 3,
-                    "date": "2021-01-28",
-                    "front": "Reciprocal concessions",
-                    "back": "the tactic by which you asked something large with the intent of being rejected and then retreating to a smaller request which is now more likely to be accepted. Aka rejection-then-retreat.",
-                    "type": "flash"
-                },
-                {
-                    "level": 3,
-                    "date": "2021-01-28",
-                    "front": "Xerox study",
-                    "back": "- \"Excuse me I have five pages. May I use the Xerox machine because I'm in a rush\" had a 94% success rate in a study\n- while \"Excuse me I have five pages. May I use the Xerox machine?\" Had a 60% success rate\n- People simply like to have reasons for what they do ",
-                    "type": "flash"
-                },
-                {
-                    "level": 3,
-                    "date": "2021-01-28",
+                    "level": 5,
+                    "date": "2021-02-16",
                     "front": "The principle of perceptual contrast",
                     "back": "if two items are fairly different, we tend to see the second as much more different than the first.",
                     "type": "flash"
                 },
                 {
-                    "level": 3,
-                    "date": "2021-01-28",
+                    "level": 5,
+                    "date": "2021-02-16",
+                    "quote": "If you have a client on the fence about a purchase, get that person to think that they have some competition",
+                    "type": "quote"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-16",
+                    "front": "Xerox study",
+                    "back": "- \"Excuse me I have five pages. May I use the Xerox machine because I'm in a rush\" had a 94% success rate in a study\n- while \"Excuse me I have five pages. May I use the Xerox machine?\" Had a 60% success rate\n- People simply like to have reasons for what they do ",
+                    "type": "flash"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-18",
+                    "quote": "Scarcity  <<<  drop from abundance to scarcity drop from abundance to scarcity  <<<   caused by social demand for that item ",
+                    "type": "quote"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-16",
+                    "front": "The worst conditions for social bias to occur",
+                    "back": "(1) uncertainty and (2) similarity to the group",
+                    "type": "flash"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-18",
+                    "front": "Reciprocal concessions",
+                    "back": "the tactic by which you asked something large with the intent of being rejected and then retreating to a smaller request which is now more likely to be accepted. Aka rejection-then-retreat.",
+                    "type": "flash"
+                },
+                {
+                    "level": 5,
+                    "date": "2021-02-17",
                     "front": "Pluralistic ignorance",
                     "back": "When an observation could have an explanation which doesn't relate to an emergency situation, so bystanders won't react unless they see other people reacting as if there is an emergency",
                     "type": "flash"
@@ -989,55 +1021,113 @@
             ]
         },
         {
-            "title": "Phillip K. Dick",
+            "title": "Stats",
             "cards": [
                 {
-                    "level": 5,
-                    "date": "2021-02-17",
-                    "quote": "Reality is that which, when you stop believing in it, doesn't go away.",
-                    "type": "quote"
-                }
-            ]
-        },
-        {
-            "title": "Khan Academy",
-            "cards": [
-                {
-                    "level": 5,
-                    "date": "2021-02-15",
-                    "front": "Confidence interval",
-                    "back": "the largest p-value we accept before rejecting the null hypothesis.",
-                    "type": "flash"
-                }
-            ]
-        },
-        {
-            "title": "Eleanor Roosevelt",
-            "cards": [
-                {
-                    "level": 5,
-                    "date": "2021-02-05",
-                    "quote": "The future belongs to those who believe in the beauty of their dreams.",
-                    "type": "quote"
-                }
-            ]
-        },
-        {
-            "title": "Stats - Veaux",
-            "cards": [
-                {
-                    "level": 1,
-                    "date": "2021-01-27",
-                    "front": "Standard deviation of a binomial distribution",
-                    "back": "s = sqrt( np(1-p) )",
+                    "level": 2,
+                    "date": "2021-02-08",
+                    "front": "Prospective vs Retrospective Studies",
+                    "back": "- Both observational studies\n- In one you look back to explain an outcome. In the other you follow people who made a choice or have an attribute",
                     "type": "flash"
                 },
                 {
-                    "level": 1,
-                    "date": "2021-01-27",
-                    "front": "Coefficient of Determination",
-                    "back": "The percentage of variation in y which is described by the line.\nR^2 = 1 - (SSE_line / SSE_y)",
+                    "level": 2,
+                    "date": "2021-02-08",
+                    "front": "Lurking vs Confounding Variables",
+                    "back": "- Lurking: Two variables can be explained by the same underlying cause which is hidden, so people think one variable caused the other\n- Confounding: Levels of one associated with another in such a way their effects can't be separated",
                     "type": "flash"
+                }
+            ]
+        },
+        {
+            "title": "Stuart Russel",
+            "cards": [
+                {
+                    "level": 5,
+                    "date": "2021-02-16",
+                    "front": "You can't get the coffee if you're dead",
+                    "back": "description of why almost any agent goal implies an instrumental strategy of surviving / not being shut down",
+                    "type": "flash"
+                }
+            ]
+        },
+        {
+            "title": "P.C. Hodgell",
+            "cards": [
+                {
+                    "level": 5,
+                    "date": "2021-02-20",
+                    "quote": "That which can be destroyed by the truth should be.",
+                    "type": "quote"
+                }
+            ]
+        },
+        {
+            "title": "Math",
+            "cards": [
+                {
+                    "level": 1,
+                    "date": "2021-02-08",
+                    "front": "Integration by Parts",
+                    "back": "Integral of udv = uv - Integral of vdu",
+                    "type": "flash"
+                }
+            ]
+        },
+        {
+            "title": "Wikipedia",
+            "cards": [
+                {
+                    "level": 5,
+                    "date": "2021-02-12",
+                    "front": "p-value",
+                    "back": "the probability of obtaining test results at least as extreme as the results actually observed, under the assumption that the null hypothesis is correct.",
+                    "type": "flash"
+                }
+            ]
+        },
+        {
+            "title": "Lao Tzu",
+            "cards": [
+                {
+                    "level": 5,
+                    "date": "2021-02-16",
+                    "quote": "Nature does not hurry, yet everything is accomplished.",
+                    "type": "quote"
+                }
+            ]
+        },
+        {
+            "title": "HPMOR, EY",
+            "cards": [
+                {
+                    "level": 5,
+                    "date": "2021-02-24",
+                    "quote": "Hesitation is always easy, but rarely useful.",
+                    "type": "quote"
+                }
+            ]
+        },
+        {
+            "title": "Noticing Confusion, EY",
+            "cards": [
+                {
+                    "level": 5,
+                    "date": "2021-02-23",
+                    "front": "Conservation of Expected Evidence",
+                    "back": "- The expectation of the posterior probability, after viewing the evidence, must equal the prior probability.\n- P(H) = P(E) P(H|E) + P(~E) P(H|~E)\n- 0 = (P(H|E)-P(H))P(E) + (P(H|~E)-P(H))P(~E)",
+                    "type": "flash"
+                }
+            ]
+        },
+        {
+            "title": "Grapes of Wrath, Steinbeck",
+            "cards": [
+                {
+                    "level": 5,
+                    "date": "2021-02-19",
+                    "quote": "For anybody else it was a mistake, but if you think it was a sin-then it's a sin. A fella builds his own sins right up from the groun.",
+                    "type": "quote"
                 }
             ]
         }
